@@ -1,0 +1,501 @@
+id,title,state,created_at,closed_at,days_to_close,labels,is_bug,risk_score,comment_count,assignees,body_length,risk_score_v2,is_bug_v2
+30501,[sw] Add pre-signed ROM image for CW340,open,2026-06-24 09:41:05+00:00,,,,False,0,0,0,265,0,False
+30500,[ci] Add a CI check for lock files on the `earlgrey_1.0.0` branch,open,2026-06-24 07:40:42+00:00,,,,False,0,0,0,318,0,False
+30498,[ci] Fix failing CW340 ROM Tests,closed,2026-06-24 06:46:48+00:00,2026-06-24 11:39:25+00:00,0.0,,False,0,1,2,940,1,False
+30495,"[rom] ROM, ROM_EXT to only sense strong pull up/down values",open,2026-06-23 17:05:55+00:00,,,,False,0,1,0,199,0,False
+30491,[gpio] Re-arrange address map to group CSRs according to pin not functionality,open,2026-06-22 20:57:16+00:00,,,IP:gpio,False,0,1,2,802,0,False
+30490,[reggen] Consider adding an ALERT_TEST_REGWEN register,open,2026-06-22 20:44:49+00:00,,,Tool:reggen,False,0,1,2,932,0,False
+30485,[rom_ctrl] Options to speed up ROM verfication,open,2026-06-22 11:36:27+00:00,,,IP:rom_ctrl,False,0,2,0,1441,0,False
+30454,[orchestrator] Use rlocations properly in the orchestrator script,open,2026-06-18 15:47:43+00:00,,,,False,0,0,0,450,0,False
+30442,[ci] Remove Git downgrade for `cherrypick.yml` when Git 2.55.0 is available on `ubuntu-24.04` Github runners,open,2026-06-17 13:40:37+00:00,,,Type:Cleanup|Component:CI,False,0,0,1,536,0,False
+30389,"[dv, chip_sim, verilator] Add build option to skip ROM verification",open,2026-06-12 16:17:36+00:00,,,Component:DV,True,0,4,1,1062,1,False
+30361,[rom/rom_ext] Current strength and slew rate should be configurable from ROM/ROM_EXT stage,open,2026-06-10 15:14:42+00:00,,,SW:ROM|SW:ROM_EXT,False,0,0,0,294,0,False
+30340,[ci] Run AscentLint only when necessary,open,2026-06-09 13:52:59+00:00,,,Component:CI,False,0,1,2,464,0,False
+30336,[ci] Migrate the `Airgapped build` CI job to a different runner and re-enable it,open,2026-06-09 13:21:25+00:00,,,Component:CI,False,0,0,1,386,0,False
+30326,[rom] New option for ROM Execution Disable in RMA,open,2026-06-09 06:23:20+00:00,,,SW:ROM,False,0,0,1,712,0,False
+30323,"[conn,earlgrey] Failing connectivity checks because of black-boxed prim_clock_buf",open,2026-06-08 17:55:15+00:00,,,Component:FPV|TOP:earlgrey,False,0,1,0,1032,1,False
+30309,"[earlgrey,spi_device] Change SRAM to 1r1w",closed,2026-06-05 15:24:25+00:00,2026-06-12 12:47:17+00:00,6.0,,False,0,0,0,241,1,False
+30304,[rfc] Publishing OpenTitan Security Advisories on GitHub Infrastructure,open,2026-06-05 00:31:44+00:00,,,RFC:Proposal,False,0,0,0,6543,0,False
+30294,"[rtl,fpga] Steps towards functional `bdkr_loader` IP",open,2026-06-04 07:03:17+00:00,,,Component:FPGA,False,0,0,4,1268,0,False
+30282,[topgen] Handle default values for array elements correctly,open,2026-06-03 14:40:28+00:00,,,Component:Tooling,False,0,0,1,1825,0,False
+30281,P-256 ECDH shared key binary triggers Alert 48 in Verilator chip sim while ISS passes,open,2026-06-03 14:32:04+00:00,,,,False,0,2,0,5598,0,False
+30274,Linking >1 non-trivial OTBN binary in Verilator chip sim triggers consistent Alert 48,closed,2026-06-03 02:31:40+00:00,2026-06-03 08:18:59+00:00,0.0,,False,0,0,0,6567,0,False
+30189,Chip level I2C host vseq timing parameter calculation,open,2026-05-22 16:57:42+00:00,,,Type:Question,False,0,0,0,6853,0,False
+30166,[i2c] Port i2c_host_override_test to CW340,closed,2026-05-21 11:15:23+00:00,2026-05-21 18:38:54+00:00,0.0,,False,0,0,1,36,0,False
+30155,"[prim_fifo_async_simple] DFT Enhancement, removal of tied off flops",closed,2026-05-19 15:17:01+00:00,2026-06-01 10:26:56+00:00,12.0,,False,0,0,1,673,0,False
+30152,[ci] Fix Node.js 20 Github Action deprecation warnings,closed,2026-05-19 13:39:28+00:00,2026-06-04 17:03:39+00:00,16.0,Type:Task|Component:CI,False,0,0,2,1267,0,False
+30147,`smoke_test_vectorized` fails after URND PRNG replacement (Xoshiro256++ → Bivium),closed,2026-05-19 04:00:44+00:00,2026-05-19 10:15:50+00:00,0.0,IP:otbn,False,0,4,1,1544,1,False
+30144,"[keymgr,rtl] The kmac_key_o signal changes key when the valid bit is true",open,2026-05-18 15:37:04+00:00,,,Component:RTL|IP:keymgr,False,0,4,0,1175,2,False
+30128,[aes] V2 & V2S Signoff for v.1.1.0 with optional hardware support for GCM,closed,2026-05-15 16:27:52+00:00,2026-05-22 11:30:56+00:00,6.0,IP:aes,False,0,6,3,705,0,False
+30127,[aes] D2 & D2S Signoff for v.1.1.0 with optional hardware support for GCM,closed,2026-05-15 14:20:58+00:00,2026-05-22 11:30:31+00:00,6.0,IP:aes,False,0,9,3,846,0,False
+30125,[checklist] Handling of bugs discovered post D3/V3,open,2026-05-15 13:08:00+00:00,,,,False,0,0,2,839,0,False
+30096,earlgrey: Intermittent spihost corruption when clkdiv=0,open,2026-05-11 20:54:28+00:00,,,,False,0,1,2,2202,1,False
+30085,Export hsmtool out of the OpenTitan repo into its own repository,open,2026-05-11 10:21:22+00:00,,,,False,0,5,2,140,0,False
+30070,"[bazel build] rules_rust version is fairly old, upgrade to get new features",open,2026-05-08 13:03:47+00:00,,,,False,0,0,0,578,0,False
+30062,"[otbn,mask,rtl] Temporarily disable MAI to fit the CW310",open,2026-05-07 15:46:05+00:00,,,IP:otbn,False,0,0,1,345,0,False
+30045,`manuf_sram_program_crc` test flakey,closed,2026-05-06 12:19:14+00:00,2026-05-06 12:37:28+00:00,0.0,,False,0,2,0,182,0,False
+30034,"[csrng,dv] Testbench doesn't instantiate block correctly",closed,2026-05-05 16:16:32+00:00,2026-05-18 16:04:30+00:00,12.0,Component:DV|IP:csrng,True,0,0,0,294,1,False
+30032,[aes/dv] aes_alert_reset failures,closed,2026-05-05 15:49:06+00:00,2026-05-08 15:17:27+00:00,2.0,,False,0,5,1,711,1,False
+30028,"[CI, FPGA] Move CW310 tests to nightly run only",open,2026-05-05 12:29:41+00:00,,,,False,0,0,0,499,0,False
+29969,"[entropy_src, aes, otbn] Missing reset-during-operation test coverage",closed,2026-04-30 09:05:19+00:00,2026-05-19 18:35:59+00:00,19.0,,False,0,1,0,920,0,False
+29968,[lc_ctrl] Untested port interaction combinations in state decode and state transition,open,2026-04-30 09:04:50+00:00,,,,False,0,1,0,808,0,False
+29967,[lc_ctrl] Uninitialized registers 'dec_lc_state' and 'dec_lc_state_buf' in state decoder,open,2026-04-30 09:04:30+00:00,,,,False,0,1,0,606,0,False
+29966,[lc_ctrl] Unused register 'unused_trans_cmd' present in RTL without reset initialization,open,2026-04-30 09:04:06+00:00,,,,False,0,1,0,709,0,False
+29965,[aes] Array out-of-bounds: ctr_slice_idx indexes packed vectors without bounds guard,open,2026-04-30 09:02:53+00:00,,,,False,0,1,0,811,0,False
+29964,[csrng] Array out-of-bounds: cmd_arb_idx_q indexes packed vectors without bounds guard,open,2026-04-30 09:01:59+00:00,,,,False,0,1,0,811,0,False
+29953,[cryptolib] RSA currently lacks a key gen based on provided seed,open,2026-04-29 06:47:32+00:00,,,SW:cryptolib,False,0,2,0,167,0,False
+29940,[sw] Document a policy on 64-bit division in SW code,open,2026-04-28 11:50:25+00:00,,,,False,0,0,1,402,0,False
+29889,[crypto] Add OTBN Instruction Count check to Ed25519,closed,2026-04-24 10:44:16+00:00,2026-04-29 18:02:29+00:00,5.0,SW:cryptolib,False,0,5,2,199,0,False
+29888,[crypto] Consider adding a new function to create Ed25519 private keys,open,2026-04-24 10:33:14+00:00,,,SW:cryptolib,False,0,0,0,359,0,False
+29864,"[ci, scripts] `check-pr-changes-allowed.py` does not consider review comments",closed,2026-04-22 16:59:06+00:00,2026-06-23 15:27:29+00:00,61.0,Component:Tooling|Component:CI,False,0,1,0,455,1,False
+29829,[cryptolib] Add API function to retrieve HW-backed SW seed from key manager,closed,2026-04-21 10:11:42+00:00,2026-05-08 07:10:04+00:00,16.0,SW:cryptolib,False,0,2,0,489,0,False
+29817,[ci] FuseSoc builds not being cached,closed,2026-04-17 16:11:21+00:00,2026-04-21 12:15:47+00:00,3.0,Type:Bug|Component:CI,True,0,0,1,3570,2,True
+29796,[ci] Run nightly FPGA jobs for `slow_tests`,open,2026-04-16 09:37:45+00:00,,,,False,0,0,2,424,0,False
+29780,Signing Enablement,open,2026-04-14 15:36:13+00:00,,,,False,0,0,0,448,0,False
+29779,Make QEMU emulator usable downstream,open,2026-04-14 15:35:10+00:00,,,,False,0,1,0,128,0,False
+29778,Improve cryptolib external usability,open,2026-04-14 15:33:59+00:00,,,,False,0,2,1,300,0,False
+29777,Register Definitions,open,2026-04-14 15:32:02+00:00,,,,False,0,0,1,294,0,False
+29776,Devbundle Release Process,closed,2026-04-14 15:26:56+00:00,2026-05-22 14:35:02+00:00,37.0,,False,0,3,1,945,0,False
+29756,[top/fpga] De-duplicate pin and pad info for cw310 and cw340,open,2026-04-12 19:10:45+00:00,,,TOP:earlgrey,False,0,0,0,348,0,False
+29747,[ci] ROM_EXT is too large,closed,2026-04-11 07:51:09+00:00,2026-04-14 06:28:59+00:00,2.0,,False,0,4,0,2240,0,False
+29681,[spi_host] Loopback in standard mode,closed,2026-04-07 10:09:14+00:00,2026-04-07 10:42:16+00:00,0.0,IP:spi_host,False,0,1,0,1155,0,False
+29674,[rom] Remove symbol for chip_info_size and turn it into an autogenerated #define,open,2026-04-05 12:38:55+00:00,,,,False,0,0,0,401,0,False
+29649,[RFC] Optimizing CI Runner Utilization,open,2026-04-01 10:47:05+00:00,,,RFC:Proposal|Component:CI,False,0,8,0,2738,0,False
+29648,[alert_handler] prim_alert_sender ignores a ping that arrives very shortly after the previous one,open,2026-04-01 10:22:35+00:00,,,IP:alert_handler,False,0,3,0,4226,0,False
+29624,[spi_device] Flash Payload Buffer size,open,2026-03-30 15:00:17+00:00,,,,False,0,0,2,306,0,False
+29623,[spi_device] Consider the addition of a CSb interrupt,open,2026-03-30 14:28:09+00:00,,,,False,0,2,2,304,0,False
+29613,[dv] reports.opentitan.org RTL coverage results are stale since Feb 2025,open,2026-03-28 19:48:57+00:00,,,,False,0,0,0,1054,0,False
+29563,Verified Ownership Entity ,closed,2026-03-24 19:12:33+00:00,2026-03-24 19:12:59+00:00,0.0,,False,0,1,0,148,0,False
+29555,[rv_dm] OpenOCD fails to halt the cpu through JTAG,open,2026-03-23 16:12:14+00:00,,,,False,0,6,1,3120,1,False
+29525,[build] verilator 4.210 fails with uart_smoketest_sim_verilator,open,2026-03-21 05:20:56+00:00,,,,False,0,2,0,5603,1,False
+29496,"[otbn,rtl] Clean up use of `mac_en_i` in bignum MAC",closed,2026-03-18 11:29:00+00:00,2026-03-27 07:25:29+00:00,8.0,IP:otbn,False,0,1,1,1525,0,False
+29495,"[otbn,dv] Fix CTRL_REDUN tests targeting bignum MAC",open,2026-03-18 11:13:23+00:00,,,IP:otbn,False,0,1,0,2605,0,False
+29490,[ci] USB problems in CI,open,2026-03-17 17:42:00+00:00,,,,False,0,0,0,557,0,False
+29485,[rfc] Optimize shadow registers,closed,2026-03-16 21:15:14+00:00,2026-03-26 13:31:50+00:00,9.0,RFC:Approved,False,0,2,1,365,0,False
+29482,[spi_host] SPI / QSPI direct mapped mode,open,2026-03-16 11:26:08+00:00,,,,False,0,1,0,628,0,False
+29465,"[otbn,dv] Complete the coverage for OTBN's SIMD instruction",open,2026-03-13 12:19:34+00:00,,,IP:otbn,False,0,0,1,478,0,False
+29458,[i2c] External inputs being used without synchronisation,closed,2026-03-12 11:20:40+00:00,2026-04-27 14:26:04+00:00,46.0,IP:i2c,False,0,1,0,1325,0,False
+29445,[dma] Clearing error code by writing to the status.error field seems to be one cycle delayed?,open,2026-03-11 22:00:09+00:00,,,,False,0,0,0,1418,1,False
+29432,[Perso] Update perso TLV definitions from OpenTitan Provisioning repo,open,2026-03-11 00:31:58+00:00,,,,False,0,0,0,475,0,False
+29415,[component] How to get a file list for vcs and Verdi?,open,2026-03-09 03:17:12+00:00,,,,False,0,3,0,1040,0,False
+29413,"[pwrmgr,sva] The pwrmgr_sec_cm_checker_assert module is not bound in correctly.",closed,2026-03-07 19:10:41+00:00,2026-04-07 17:21:06+00:00,30.0,Component:DV|IP:pwrmgr,True,0,0,0,718,1,False
+29412,[rom_ext] Decrease size of rom_ext_emulation_cwt,closed,2026-03-06 17:19:08+00:00,2026-04-15 15:43:24+00:00,39.0,,False,0,0,0,311,0,False
+29408,[dma] bug on src and dst address increasing when in AddrNoIncrement mode,closed,2026-03-05 18:02:00+00:00,2026-03-05 21:52:05+00:00,0.0,,False,0,1,0,460,0,False
+29381,"[fpv, rv_timer]  add fpv assertions to rv_timer_core_assert_fpv and rv_timer_interrupts_assert_fpv",open,2026-03-01 18:43:10+00:00,,,,False,0,2,0,219,0,False
+29364,"[bazel] Rename execution environment to drop the ""_with_fake_keys"" suffix",open,2026-02-25 16:39:29+00:00,,,,False,0,0,2,153,0,False
+29331,"[otbn, masking] DV for masking interface implementation",closed,2026-02-17 13:14:45+00:00,2026-03-13 13:12:16+00:00,23.0,IP:otbn,False,0,0,0,96,0,False
+29309,"[Doc] Can't find ""Integrated OpenTitan: Design for Test and Debug Suppor"" in the documentaion",open,2026-02-14 10:42:02+00:00,,,,False,0,0,0,284,0,False
+29283,[ci] Inconsistent CI gates,open,2026-02-09 11:32:18+00:00,,,Component:CI,False,0,0,1,589,0,False
+29271,[prim] Add and use a prim_const_buf and prim_const_sec_anchor_buf primitive cells,closed,2026-02-06 12:48:50+00:00,2026-03-20 13:40:55+00:00,42.0,Component:RTL|Component:DD,False,0,8,2,1308,1,False
+29242,[otbn] standalone RTL simulation,closed,2026-02-04 06:10:33+00:00,2026-02-04 06:21:15+00:00,0.0,,False,0,1,0,459,0,False
+29241,[SYNTHESIS] May remove xilinx primitive from general filelist？,open,2026-02-04 02:13:33+00:00,,,,False,0,1,0,929,0,False
+29233,"[otbn, dv] otbn_ctrl_redun test fails because of assertions",open,2026-02-02 17:45:19+00:00,,,Component:DV|IP:otbn,True,0,0,0,1364,2,False
+29205,"[test-triage,Entropy_SRC]",closed,2026-01-29 03:11:21+00:00,2026-01-29 03:33:40+00:00,0.0,Component:TestTriage,False,0,1,0,1250,0,False
+29198,dv_report_catcher,open,2026-01-28 08:52:17+00:00,,,,False,0,1,0,675,0,False
+29193,Setting up snapshot-20191101-1,open,2026-01-27 18:41:13+00:00,,,,False,0,5,0,229,0,False
+29171,Guidance Request: understanding OpenTitan flows and using commercial tools,open,2026-01-25 22:58:52+00:00,,,,False,0,1,0,1963,0,False
+29170,"[alert,rtl] The `skew_cnt_q` signal is bigger than needed in prim_diff_decode.sv",open,2026-01-25 22:43:58+00:00,,,Component:RTL|IP:alert_handler,False,0,3,0,1812,1,False
+29169,[gitignore] .venv not in .gitignore,closed,2026-01-25 19:26:08+00:00,2026-02-02 14:55:03+00:00,7.0,,False,0,2,0,378,0,False
+29164,[component] Request for Verified Docker Image & Discussion Channel - Persistent Bazel Build/Test Failures for OpenTitan Simulations,closed,2026-01-22 10:04:50+00:00,2026-01-28 12:04:19+00:00,6.0,,False,0,4,0,12711,1,False
+29143,[util] Removal of python3-urllib3 prevents util/get-toolchain.py from working,closed,2026-01-16 16:48:13+00:00,2026-02-09 16:01:36+00:00,23.0,,False,0,2,0,1856,0,False
+29139,[otbn] Expose the `INSN_CNT` register to OTBN apps,open,2026-01-16 11:10:54+00:00,,,IP:otbn,False,0,1,6,615,0,False
+29133,[bazel] Missing configurations when building FPGA bitstream from scratch,open,2026-01-15 18:32:40+00:00,,,,False,0,0,0,249,0,False
+29132,[ci] CI runs do not use a Python venv,open,2026-01-15 18:20:56+00:00,,,Type:Enhancement|Component:CI,False,0,0,0,375,0,False
+29131,[python] `uv sync` fails using a Python 3.14 interpreter,open,2026-01-15 18:10:18+00:00,,,Component:Software|Type:Bug,True,0,0,0,1403,3,True
+29123,[sival] `usb_functest` broken on `cw3*0_rom_with_fake_keys` envs,closed,2026-01-15 12:28:29+00:00,2026-01-16 17:08:39+00:00,1.0,IP:usbdev|Component:SiliconValidation,False,0,1,1,1076,3,False
+29102,[test] Versions of Verilator >= 5.0 require --timing or --no-timing options for top level sim builds,open,2026-01-13 17:33:25+00:00,,,,False,0,2,0,641,0,False
+29059,[ECC] How could I use secded_gen.py script only?,open,2026-01-09 07:03:35+00:00,,,,False,0,0,0,191,0,False
+29055,[sival] `sleep_pin_wake` test should cover all pins in one run,open,2026-01-08 15:51:09+00:00,,,Component:SiliconValidation,False,0,0,0,261,2,False
+29028,"[chip-test] Failing UART Tests due to configuring UART1 pins from IOB4,B5 pins to IOA0,A1 pins",open,2026-01-05 23:00:40+00:00,,,Component:ChipLevelTest,False,0,2,1,1380,1,False
+29026,"[otbn, dv] Modelling SW errors during delayed escalation",open,2026-01-05 14:21:13+00:00,,,Component:DV|IP:otbn,True,0,0,0,7399,2,False
+29011,"[ottf, spi console] Change spi buffer last read addr contraint to open ended",closed,2025-12-30 20:21:24+00:00,2026-01-06 15:10:19+00:00,6.0,,False,0,0,1,418,1,False
+29010,[ottf] Remove prints during ATE provisioning,closed,2025-12-30 20:10:45+00:00,2026-01-06 15:10:46+00:00,6.0,,False,0,0,1,324,0,False
+29007,"[earlgrey,otp,bazel] OTP build fails with ""invalid OTP address"" after modifying top_earlgrey",open,2025-12-27 11:12:38+00:00,,,,False,0,1,0,1279,1,False
+28999,"[adc_ctrl,dv] adc_ctrl_clock_gating_vseq sometimes fails because we don't respond to alert pings when the clock is turned off",open,2025-12-23 22:18:08+00:00,,,,False,0,1,0,538,1,False
+28994,[pentest] Add registers to clobber list in assembly snippets,open,2025-12-23 14:45:43+00:00,,,,False,0,1,2,271,0,False
+28985,[test] fix `usbdev_deep_disconnect_test` flakiness on cw310,open,2025-12-22 21:26:40+00:00,,,,False,0,0,0,893,0,False
+28977,"[silicon_creator,dice] Create a unittest for the CBOR parser",open,2025-12-19 08:39:45+00:00,,,,False,0,1,0,538,0,False
+28971,[silicon_creator] Make parallel ECDSA/SPX test use more bazel rules instead of checked-in binaries,open,2025-12-18 12:48:53+00:00,,,,False,0,0,0,1025,0,False
+28970,"[manuf,ast] Move top-specific handling to a manufacturing hook",open,2025-12-18 12:45:10+00:00,,,,False,0,0,0,405,0,False
+28969,[power virus] Implement flushing logic,open,2025-12-18 12:42:23+00:00,,,,False,0,0,0,561,0,False
+28968,[flash_ctrl] ICV failure on single bit flipped erased words with scrambling,open,2025-12-18 11:22:40+00:00,,,Component:RTL|IP:flash_ctrl,False,0,7,1,972,2,False
+28964,"[sw,cryptolib] Harden the Ed25519 implementation",closed,2025-12-17 16:36:06+00:00,2026-04-30 08:45:54+00:00,133.0,SW:cryptolib,False,0,1,1,160,0,False
+28930,[top_darjeeling] Is there synthesis sdc for top_darjeeling?,open,2025-12-15 05:50:38+00:00,,,Component:Darjeeling,False,0,0,0,164,0,False
+28913,[aes] Todos following upstreaming of support for GCM,open,2025-12-11 11:02:32+00:00,,,Type:Task|Component:RTL|IP:aes,False,0,0,1,2072,1,False
+28903,[top_darjeeling] RACL deisgn rationale and deployment,closed,2025-12-10 07:43:44+00:00,2025-12-16 00:22:32+00:00,5.0,Component:Darjeeling,False,0,0,0,1203,0,False
+28902,"[qemu, test] coremark qemu test failed",closed,2025-12-10 02:38:46+00:00,2025-12-12 04:29:46+00:00,2.0,,False,0,4,0,190,1,False
+28895,"[opentitanlib,qemu] Add support for transfers in the USB opentitanlib backend",open,2025-12-08 15:24:43+00:00,,,,False,0,0,1,464,0,False
+28890,[qemu] QEMU's `sram_ctrl `does not connect the lifecycle controller `HW_DEBUG_EN` feature,closed,2025-12-08 10:32:14+00:00,2025-12-10 16:24:38+00:00,2.0,Component:QEMU,False,0,1,1,422,0,False
+28889,[qemu] QEMU OTP timing modelling fixes,closed,2025-12-08 10:28:13+00:00,2025-12-10 16:25:39+00:00,2.0,Component:QEMU,False,0,1,1,872,0,False
+28888,"[otbn,dv] sec_cm test fails due to undefined loop address information",closed,2025-12-08 09:31:56+00:00,2026-01-06 19:15:44+00:00,29.0,Component:DV|IP:otbn,True,0,5,0,935,2,False
+28886,Orchestrator python argument parsing uses redundant options,open,2025-12-05 14:04:43+00:00,,,,False,0,0,0,591,0,False
+28884,[qemu] OpenTitanTool fails to reconnect to QEMU,closed,2025-12-05 11:29:23+00:00,2025-12-17 10:19:14+00:00,11.0,Component:QEMU,False,0,1,1,554,1,False
+28883,"[manuf,qemu] Provisioning flow assumes non-provisioned flash is initialized zeroed/set",open,2025-12-05 11:22:13+00:00,,,Component:QEMU,False,0,1,1,1357,0,False
+28871,"[sw,silicon_creator] Add a ROM GPIO driver",closed,2025-12-04 11:37:11+00:00,2025-12-08 09:27:21+00:00,3.0,,False,0,0,1,149,0,False
+28868,[top_darjeeling] Is there a bazel BUILD config to build rom for Darjeeling?,open,2025-12-04 06:42:57+00:00,,,Component:Darjeeling,False,0,1,0,172,0,False
+28845,[qemu] Flaky duplicated byte in SPI transfers,closed,2025-12-01 10:34:00+00:00,2025-12-05 11:38:20+00:00,4.0,Component:QEMU,False,0,2,1,729,0,False
+28844,[qemu] Fix reset assertion failures when using the RV_DM,closed,2025-11-28 16:28:06+00:00,2025-12-05 11:36:56+00:00,6.0,Component:QEMU,False,0,2,1,453,1,False
+28827,[chip-test] USB tests failing,closed,2025-11-26 11:12:17+00:00,2025-11-26 17:37:13+00:00,0.0,Component:ChipLevelTest,False,0,1,1,1311,1,False
+28819,"[csrng, entropy_src] Consider removing the CS AES halt interface",closed,2025-11-25 09:29:08+00:00,2025-12-05 10:02:25+00:00,10.0,IP:csrng,False,0,3,2,1273,0,False
+28818,"[hw,entropy_src,dv] UVM TB forces signals/paths of prim_flop_2sync-internal signals",open,2025-11-24 19:01:03+00:00,,,Component:DV|IP:entropy_src,True,0,0,0,1346,1,False
+28817,Failing Crypto tests  due to CRC Error,closed,2025-11-24 17:52:32+00:00,2026-02-02 17:47:00+00:00,69.0,Component:ChipLevelTest,False,0,14,2,2181,2,False
+28816,[cryptolib] Cryptolib cannot operate on DICE attestation keys,closed,2025-11-24 17:40:58+00:00,2026-05-04 08:34:10+00:00,160.0,Type:Enhancement|SW:cryptolib,False,0,4,1,909,0,False
+28814,"[alert,dv] Model variable signal skew in chip-level testbench",open,2025-11-24 10:26:30+00:00,,,Component:DV|IP:prim,True,0,0,0,916,1,False
+28806,"[doc, spi_device] Document limitations/feature usage",open,2025-11-21 17:26:28+00:00,,,Component:Doc|IP:spi_device,False,0,2,1,3322,0,False
+28802,[rom_ctrl] ROM verification does not make use ECC bits,open,2025-11-21 13:49:02+00:00,,,IP:rom_ctrl,False,0,3,0,2122,0,False
+28800,[dvsim] Modernise Python code,closed,2025-11-21 10:41:51+00:00,2025-12-23 13:05:08+00:00,32.0,,False,0,3,3,641,0,False
+28788,[RFC] OTTF / test harness binary protocol,open,2025-11-20 11:35:55+00:00,,,RFC:Proposal|SW:OTTF,False,0,9,0,5738,0,False
+28772,"[hw,otp_ctrl,dv] Dedicated partition status register to increase number of partitions",open,2025-11-18 14:42:40+00:00,,,,False,0,2,2,411,0,False
+28765,[CI] Fix the FPGA nightly report upload,closed,2025-11-17 12:23:57+00:00,2025-12-02 14:42:34+00:00,15.0,,False,0,1,2,154,0,False
+28753,[crypto] Do `memeq` in `randomized_bytecopy`,closed,2025-11-14 15:39:34+00:00,2025-11-25 10:27:56+00:00,10.0,SW:cryptolib,False,0,0,1,175,0,False
+28749,Why does prim_onehot_check exist?,closed,2025-11-14 11:50:08+00:00,2025-12-23 13:13:36+00:00,39.0,,False,0,4,0,66,0,False
+28738,[qemu] SPI console TX indicator host-side pacing,closed,2025-11-13 13:16:55+00:00,2025-11-28 16:47:26+00:00,15.0,SW:opentitantool|Component:QEMU,False,0,2,1,1573,0,False
+28737,[qemu] Emulation of Power-on-Reset,closed,2025-11-13 13:10:18+00:00,2025-11-27 14:51:03+00:00,14.0,Component:QEMU,False,0,1,1,1397,0,False
+28736,[qemu] SPI Device fixes for provisioning,closed,2025-11-13 12:45:37+00:00,2025-11-18 14:59:22+00:00,5.0,Component:QEMU,False,0,2,1,901,0,False
+28735,"[qemu,ottf] SPI console with TX indicator relies on CSB status",closed,2025-11-13 12:36:21+00:00,2025-11-19 13:10:53+00:00,6.0,Component:QEMU,False,0,1,1,1106,0,False
+28732,[qemu] Opentitanlib GPIO integration for incoming GPIO signals,closed,2025-11-13 11:55:19+00:00,2025-11-18 10:51:10+00:00,4.0,Component:QEMU,False,0,1,1,484,0,False
+28730,[qemu] Earlgrey 1.0.0 usb: emulate SOF and packet scheduling,closed,2025-11-13 10:24:06+00:00,2025-12-02 16:41:01+00:00,19.0,,False,0,0,1,905,0,False
+28729,[qemu] Earlgrey 1.0.0 usb: improve bus reset handling,closed,2025-11-13 10:17:57+00:00,2025-11-17 14:56:23+00:00,4.0,,False,0,0,1,482,0,False
+28728,Include rv_plic dif header in rom code for test,closed,2025-11-13 03:44:03+00:00,2025-11-13 03:50:31+00:00,0.0,,False,0,1,0,1372,0,False
+28721,[rv_plic] PLIC claim/complete register off-by-one?,closed,2025-11-12 12:56:12+00:00,2025-11-17 16:55:57+00:00,5.0,,False,0,1,0,1006,0,False
+28712,[qemu] Fix unreliable RV_DM halt on reset behaviour,closed,2025-11-11 15:23:46+00:00,2025-11-28 16:46:20+00:00,17.0,Component:QEMU,False,0,2,1,2073,0,False
+28711,[qemu] Add QEMU support to the orchestrator,open,2025-11-11 15:12:16+00:00,,,Component:QEMU,False,0,0,1,294,0,False
+28710,[qemu] QEMU provisioning flow Bazel support,open,2025-11-11 15:10:07+00:00,,,Component:QEMU,False,0,0,1,634,0,False
+28709,[qemu] Allow execution of QEMU outside of OpenTitan tests.,closed,2025-11-11 15:08:16+00:00,2025-12-05 10:39:44+00:00,23.0,Component:QEMU,False,0,2,1,399,0,False
+28708,[qemu] Broken SRAM execution flow,closed,2025-11-11 15:00:34+00:00,2025-11-18 15:02:16+00:00,7.0,Component:QEMU,False,0,1,1,745,1,False
+28703,[top_earlgrey] Failure to enter RMA when OTBN fatal alert escalation is enabled,closed,2025-11-11 01:04:56+00:00,2025-11-17 01:47:53+00:00,6.0,,False,0,9,2,1823,1,False
+28701,"[silicon_creator,ast] Multi-top Conversion",open,2025-11-10 17:18:12+00:00,,,,False,0,0,0,0,0,False
+28696,"Various Verilator errors when building (PINMISSING, NEEDTIMINGOPT)",open,2025-11-10 09:37:24+00:00,,,,False,0,2,0,7304,1,False
+28674,[crypto] Fix remaining failing RSA decrypt tests,closed,2025-11-07 13:11:38+00:00,2025-11-07 14:54:41+00:00,0.0,SW:cryptolib,False,0,0,1,169,1,False
+28669,[crypto] Verify that cryptolib testing follows FIPS recommendation,open,2025-11-07 07:11:27+00:00,,,SW:cryptolib|FIPS,False,0,0,1,199,0,False
+28666,Cryptolib reads the `mcycle` register,closed,2025-11-06 16:36:34+00:00,2026-03-23 06:44:40+00:00,136.0,SW:cryptolib,False,0,1,2,747,0,False
+28665,[qemu] Earlgrey 1.0.0 flash info splicing,open,2025-11-06 15:58:17+00:00,,,SW:Build System|Component:QEMU,False,0,0,0,1288,0,False
+28657,"[otbn,dv] Collecting coverage fails for various tests",closed,2025-11-05 15:54:21+00:00,2025-11-13 13:18:36+00:00,7.0,,False,0,4,1,1563,1,False
+28656,[crypto] Fix remaining RSA verify tests,closed,2025-11-05 15:12:47+00:00,2025-12-04 08:43:54+00:00,28.0,SW:cryptolib,False,0,3,1,319,0,False
+28650,[tests] uart_parity_break and uart_tx_rx_test require two UARTs,open,2025-11-05 13:38:52+00:00,,,,False,0,0,0,335,0,False
+28645,[cryptolib] Deduplicate the `ibex` driver,open,2025-11-04 16:38:17+00:00,,,,False,0,3,1,1302,0,False
+28634,[crypto] ABI compatibility test b/w for OTBN boot service app b/w frozen ROM and code changes,open,2025-11-03 08:50:28+00:00,,,SW:ROM_EXT|SW:cryptolib,False,0,1,0,1967,1,False
+28621,[crypto/RSA] otcrypto_rsa_keypair_from_cofactor routine no shared secret currently,open,2025-10-31 11:07:12+00:00,,,SW:cryptolib,False,0,1,1,317,0,False
+28618,[crypto] Move randomized byte functions to hardened_memory,closed,2025-10-31 09:06:38+00:00,2025-11-13 17:16:21+00:00,13.0,SW:cryptolib,False,0,0,2,476,0,False
+28610,[crypto] Add a top attribute for checking the clkmgr jitter enable feature,open,2025-10-30 16:30:24+00:00,,,Type:Cleanup|SW:cryptolib,False,0,0,1,620,0,False
+28600,[scripts] Stream Bazel logs in alert classification validation script,open,2025-10-30 11:27:07+00:00,,,,False,0,0,0,658,0,False
+28588,OpenOCD unintendedly interacts with lc_ctrl as if it were a Debug Module,open,2025-10-29 01:08:50+00:00,,,,False,0,1,0,1950,0,False
+28565,[tests] Enhance sram_ctrl tests to exercise all tests,open,2025-10-24 08:21:54+00:00,,,,False,0,0,0,428,0,False
+28551,[crypto] Review XORs and memory operations in RSA,closed,2025-10-23 11:05:35+00:00,2025-10-31 09:56:42+00:00,7.0,SW:cryptolib,False,0,2,2,369,0,False
+28546,Need help in understanding of reading the instruction by core in opentitan,closed,2025-10-23 06:32:46+00:00,2025-12-23 13:17:10+00:00,61.0,,False,0,1,0,165,0,False
+28538,Run hello world on qemu platofrm,closed,2025-10-22 10:34:40+00:00,2025-12-10 02:39:15+00:00,48.0,,False,0,0,0,374,0,False
+28533,[crypto] Hardening of X25519,closed,2025-10-21 16:18:55+00:00,2026-06-12 08:55:36+00:00,233.0,SW:cryptolib,False,0,3,1,33,0,False
+28532,[crypto] Test RSA in the cryptotest framework,open,2025-10-21 16:11:18+00:00,,,SW:cryptolib,False,0,13,2,575,1,False
+28525,[crypto] remove `otbn_write` as we we have hardened version now,closed,2025-10-21 10:31:56+00:00,2025-10-24 06:19:32+00:00,2.0,SW:cryptolib,False,0,0,1,124,0,False
+28519,[ci] Vivado log display step is broken,open,2025-10-20 14:49:47+00:00,,,Type:Bug|Component:CI,True,0,0,0,1769,3,True
+28483,[reggen] Support optional downstream register and field attributes,closed,2025-10-14 16:51:24+00:00,2026-03-31 11:22:16+00:00,167.0,,False,0,7,1,838,0,False
+28481,[RFC] Glitch Filter for I²C SCL and SDA Inputs,closed,2025-10-14 15:16:35+00:00,2025-10-14 15:16:50+00:00,0.0,,False,0,0,0,667,0,False
+28473,[rom] Race between UART and GPIO for ROM bootstrapping,closed,2025-10-13 15:04:31+00:00,2025-10-13 20:13:21+00:00,0.0,SW:ROM,False,0,1,0,1111,0,False
+28471,Best Practice for Extracting Earlgrey RTL for ASIC Synthesis/GDSII Flow,open,2025-10-13 01:17:19+00:00,,,,False,0,0,0,4263,0,False
+28465,[crypto] Harden RSA against FI,closed,2025-10-10 06:12:35+00:00,2025-10-24 07:21:01+00:00,14.0,SW:cryptolib,False,0,0,1,83,0,False
+28458,[top_darjeeling] [dvsim] sw_build error when run dvsim.py,closed,2025-10-09 08:27:39+00:00,2025-12-23 13:24:08+00:00,75.0,Component:Darjeeling,False,0,1,0,851,1,False
+28457,Improve get_toggle_excl_bits for non-power-of-two ranges,open,2025-10-09 07:43:10+00:00,,,,False,0,1,0,684,0,False
+28447,[top_darjeeling] OTP map refresh,open,2025-10-07 13:51:09+00:00,,,Component:Darjeeling,False,0,0,1,54,0,False
+28446,[top_darjeeling] Port ROM patching library,open,2025-10-07 13:38:41+00:00,,,Component:Darjeeling,False,0,0,1,81,0,False
+28445,"[top_darjeeling] [sw,silicon_creator] Missing keymgr DPE driver",open,2025-10-07 13:32:18+00:00,,,Component:Darjeeling,False,0,0,1,153,0,False
+28438,"[sw,silicon_creator] Make the OTBN library top agnostic",closed,2025-10-06 16:30:12+00:00,2025-12-04 16:37:16+00:00,59.0,Component:MultiTop|Component:Darjeeling,False,0,0,1,0,0,False
+28426,"[sw,silicon_creator] Make Silicon Creator code top agnostic",open,2025-10-06 08:47:28+00:00,,,Component:MultiTop|Component:Darjeeling,False,0,2,1,458,0,False
+28419,[otp_ctrl] Partitions with read_lock:digest are not readable in RMA life cycle state,closed,2025-10-03 16:30:50+00:00,2025-10-13 17:11:08+00:00,10.0,Type:Bug|Hotlist:Silicon,True,0,1,0,1250,2,True
+28409,[otlib] Rust refactoring requests,open,2025-10-02 09:25:35+00:00,,,SW:opentitantool,False,0,2,1,141,0,False
+28407,[lc_ctrl] Add SOC_DBG_ prefix to the enumerated values in lc_ctrl_state.hjson,open,2025-10-02 08:44:47+00:00,,,,False,0,0,0,517,0,False
+28402,[CI] Use containers to cache dependencies to reduce the effect of intermitant service issues in CI runs,open,2025-10-01 17:02:55+00:00,,,Component:CI,False,0,0,1,1097,0,False
+28393,[Verilator] Unable to connect to virtual JTAG port with OpenOCD,open,2025-10-01 10:27:29+00:00,,,Component:Tooling|Help Wanted,False,0,0,0,3130,0,False
+28388,"[sw,silicon_creator] The current boot log is Earlgrey specific",open,2025-09-30 14:46:24+00:00,,,Component:MultiTop|Component:Darjeeling,False,0,4,0,531,0,False
+28382,[qemu] Port QEMU changes from `earlgrey_1.0.0` to `master`,open,2025-09-29 12:22:39+00:00,,,,False,0,0,0,493,1,False
+28369,"[silicon_creator,ibex] The Ibex driver only supports 2 address translation slots",closed,2025-09-25 14:19:33+00:00,2025-10-01 08:35:53+00:00,5.0,,False,0,1,1,189,0,False
+28368,[qemu] Pinmux/pad support,open,2025-09-25 14:12:25+00:00,,,Component:QEMU,False,0,0,0,496,0,False
+28367,[crypto] Update API documentation,closed,2025-09-25 11:34:10+00:00,2025-10-29 07:53:34+00:00,33.0,Component:Doc|SW:cryptolib,False,0,2,1,221,0,False
+28365,[spi_device] interrupts for unhandled flash commands,open,2025-09-25 09:37:28+00:00,,,IP:spi_device,False,0,2,0,540,0,False
+28345,[otbn] Optimizations of critical timing paths going through local escalation,closed,2025-09-23 22:12:58+00:00,2026-01-09 14:42:49+00:00,107.0,Hotlist:Security|IP:otbn,False,0,6,2,2989,1,False
+28311,RFC: Phase-Aligned PWM Disable,open,2025-09-19 10:44:58+00:00,,,RFC:Proposal|Hotlist:Silicon|Hotlist:Software,False,0,2,0,803,0,False
+28302,[Crypto] CL driver deduplication,open,2025-09-18 07:05:06+00:00,,,Hotlist:Software|Hotlist:Security|SW:cryptolib,False,0,5,4,590,0,False
+28300,[OpenTitan] OpenTitan as an Auth Token,open,2025-09-17 14:05:54+00:00,,,,False,0,0,0,351,0,False
+28286,[crypto] Multi-top Conversion,open,2025-09-17 07:38:52+00:00,,,SW:cryptolib,False,0,1,0,264,0,False
+28284,"[silicon_creator,kmac] Multi-top Conversion",closed,2025-09-17 05:38:00+00:00,2025-09-18 14:53:26+00:00,1.0,,False,0,0,1,0,0,False
+28283,"[silicon_creator,watchdog] Multi-top Conversion",closed,2025-09-17 05:32:18+00:00,2025-09-18 14:53:26+00:00,1.0,,False,0,0,1,0,0,False
+28254,RFC: Glitch Filter for I²C SCL and SDA Inputs,open,2025-09-13 19:55:17+00:00,,,,False,0,8,0,598,0,False
+28238,"[earlgrey,epmp] Update ePMP reset config",open,2025-09-11 12:22:40+00:00,,,TOP:earlgrey,False,0,0,0,389,0,False
+28218,"[silicon_creator,otbn] Multi-top Conversion",closed,2025-09-10 12:30:44+00:00,2025-09-10 16:04:32+00:00,0.0,,False,0,0,0,0,0,False
+28206,[otp_ctrl] Dedicated zeroization DAI error bit,open,2025-09-09 08:50:52+00:00,,,IP:otp_ctrl,False,0,0,0,911,1,False
+28188,[fpga] in-field programming of ROM and OTP memories on the FPGA,closed,2025-09-08 12:34:05+00:00,2026-06-04 07:08:52+00:00,268.0,Component:FPGA,False,0,4,1,792,0,False
+28183,"[silicon_creator,rstmgr] Multi-top Conversion",closed,2025-09-05 16:53:10+00:00,2025-09-11 07:02:56+00:00,5.0,,False,0,0,1,0,0,False
+28175,[spi_host] Option to manually control spi_host chip select,open,2025-09-05 09:06:30+00:00,,,,False,0,1,0,537,0,False
+28159,"[silicon_creator,rnd] Multi-top Conversion",closed,2025-09-04 16:04:50+00:00,2025-09-05 09:39:14+00:00,0.0,,False,0,0,1,0,0,False
+28156,"[silicon_creator,pinmux] Multi-top Conversion",open,2025-09-04 14:49:14+00:00,,,Component:MultiTop|Component:Darjeeling,False,0,2,1,0,0,False
+28155,"[silicon_creator,alert] Multi-top Conversion",closed,2025-09-04 14:48:47+00:00,2025-09-05 00:28:28+00:00,0.0,,False,0,0,1,0,0,False
+28154,"[silicon_creator,pwrmgr] Multi-top Conversion",closed,2025-09-04 14:48:11+00:00,2025-09-05 00:44:20+00:00,0.0,,False,0,0,1,0,0,False
+28153,[csrng] List of requested changes and improvements,open,2025-09-04 14:05:26+00:00,,,Type:Cleanup|Type:Enhancement|Type:Task|Subsystem:Entropy|IP:csrng,False,0,0,1,3757,1,False
+28148,[top_darjeeling] keymgr_dpe has missing countermeasures,closed,2025-09-03 20:25:29+00:00,2025-09-03 20:36:44+00:00,0.0,Component:Darjeeling,False,0,1,0,1547,0,False
+28124,[build] ERROR: [Updatemem 57-44] xc7k410t device is not supported by update_mem.,open,2025-09-02 17:02:03+00:00,,,,False,0,1,0,2425,1,False
+28123,[qemu] Earlgrey 1.0.0 `flash_ctrl` support,closed,2025-09-02 15:21:11+00:00,2025-11-06 15:33:01+00:00,65.0,Component:QEMU,False,0,9,1,115,0,False
+28122,[qemu] Earlgrey 1.0.0 `otp_ctrl` support,closed,2025-09-02 15:19:05+00:00,2025-11-10 16:52:46+00:00,69.0,Component:QEMU,False,0,9,1,107,0,False
+28114,"[alert_handler,topgen] Render TOP_LOC_ALERTS",open,2025-09-02 12:16:29+00:00,,,,False,0,0,0,414,0,False
+28112,"[Earlgrey,CW310] Investigate aes_idle and edn_sw_mode rom_ext test failures",open,2025-09-02 09:15:55+00:00,,,Component:FPGA|Component:CI,False,0,3,1,209,1,False
+28109,[ci] Track area over time,open,2025-09-02 05:40:14+00:00,,,,False,0,0,1,363,0,False
+28096,[crypto/montmul] `compute_rr` only works for a specific moduli range,closed,2025-08-31 18:32:22+00:00,2025-10-29 10:51:06+00:00,58.0,SW:cryptolib,False,0,1,1,834,0,False
+28095,TPM FIFO mode: DATA FIFO (0x24) and INTF_ID (0x30) never returns and rdfifo_aborted gets set,open,2025-08-30 21:33:56+00:00,,,,False,0,0,0,2573,0,False
+28074,"[silicon_creator,keymgr] Multi-top Conversion",closed,2025-08-28 15:20:21+00:00,2025-09-04 14:51:10+00:00,6.0,,False,0,0,1,114,0,False
+28071,"[silicon_creator,otp] Multi-top Conversion",closed,2025-08-28 14:10:56+00:00,2025-09-09 13:29:33+00:00,11.0,,False,0,0,1,162,0,False
+28069,[OTBN] Documentation error in block diagram,closed,2025-08-28 11:36:23+00:00,2025-09-01 14:22:52+00:00,4.0,Component:Doc|IP:otbn,False,0,0,1,195,1,False
+28062,RDC (Reset Domain Crossing) issue in spi_device due to unsynchronized reset,closed,2025-08-27 11:26:38+00:00,2025-09-07 09:40:12+00:00,10.0,,False,0,3,0,1180,0,False
+28033,"[qemu,bazel,sw] Make qemu.bzl multitop aware",open,2025-08-25 07:57:06+00:00,,,Component:MultiTop|Component:QEMU,False,0,0,0,585,0,False
+28032,"[otp_ctrl,doc] Render zeroization feature in OTP map table",closed,2025-08-25 07:53:18+00:00,2025-08-26 07:41:26+00:00,0.0,Component:Doc|IP:otp_ctrl,False,0,1,1,276,0,False
+28023,[otp_macro] Add support for not burning any fuse twice,open,2025-08-22 17:44:20+00:00,,,Component:RTL,False,0,2,0,1299,1,False
+28022,[otp_ctrl/doc] Add zeroization feature to Programmer's Guide and Theory of Operation,closed,2025-08-22 17:04:50+00:00,2025-09-15 13:41:43+00:00,23.0,Component:Doc|IP:otp_ctrl,False,0,1,1,584,0,False
+28021,[otp_ctrl] V2S signoff of v2.1.0,open,2025-08-22 17:02:18+00:00,,,IP:otp_ctrl,False,0,0,0,175,0,False
+28020,[otp_ctrl] D2S/D3 signoff of v2.1.0,open,2025-08-22 17:01:39+00:00,,,IP:otp_ctrl,False,0,0,0,181,0,False
+28017,[otp_ctrl] Move `countones` function from `otp_ctrl_top_specific_pkg.sv.tpl` to `prim_util_pkg`,closed,2025-08-22 16:33:18+00:00,2025-09-09 12:31:54+00:00,17.0,,False,0,1,1,0,0,False
+28013,[crypto] Ibex Register File randomization,closed,2025-08-22 12:28:18+00:00,2025-10-29 12:20:04+00:00,67.0,SW:cryptolib,False,0,3,1,192,0,False
+28010,[crypto] Consider moving entropy_complex_checks to initial check routine,closed,2025-08-22 09:27:31+00:00,2026-04-24 07:29:27+00:00,244.0,SW:cryptolib,False,0,10,1,295,1,False
+28008,[crypto] hardened_xor improvement for SCA,closed,2025-08-22 07:26:44+00:00,2025-10-21 09:51:53+00:00,60.0,SW:cryptolib,False,0,1,0,337,0,False
+27995,"[silicon_creator,shutdown] Multi-top Conversion",closed,2025-08-21 16:03:20+00:00,2025-09-04 14:50:27+00:00,13.0,,False,0,1,1,18,0,False
+27994,[silicon_creator] Multi-top Conversion,open,2025-08-21 16:02:32+00:00,,,,False,0,0,1,539,0,False
+27975,[spi_device] SPI Device incapable of being used as a generic communication bus?,closed,2025-08-20 20:51:25+00:00,2025-09-07 09:45:28+00:00,17.0,,False,0,4,0,1014,0,False
+27965,"[chip, dv] Test chip_sw_sleep_pin_wake failing on Xcelium",closed,2025-08-20 11:55:53+00:00,2025-08-20 11:58:41+00:00,0.0,,False,0,1,0,132,1,False
+27964,[chip. dv] Test chip_sw_alert_handler_lpg_sleep_mode_pings failing on Xcelium,closed,2025-08-20 11:48:25+00:00,2025-08-20 11:54:56+00:00,0.0,,False,0,1,0,50,1,False
+27963,[chip. dv] Test chip_sw_pwrmgr_smoketest failing on Xcelium,closed,2025-08-20 11:47:47+00:00,2025-08-20 11:53:19+00:00,0.0,,False,0,1,0,50,1,False
+27962,[chip. dv] Test chip_sw_pwrmgr_usbdev_smoketest failing on Xcelium,closed,2025-08-20 11:47:18+00:00,2025-08-20 11:51:45+00:00,0.0,,False,0,1,0,52,1,False
+27960,"[i2c,cw340] Getting I2C working on CW340",open,2025-08-20 06:22:47+00:00,,,,False,0,3,0,776,0,False
+27959,"[usbdev,cw340] No USB device listed on host with Earl Grey running in CW340",open,2025-08-20 05:44:44+00:00,,,,False,0,2,0,639,0,False
+27947,"[pinmux,rtl] The MioJtagAttrO_A assertion is false (and fails in FPV)",closed,2025-08-18 21:12:55+00:00,2025-08-22 12:01:07+00:00,3.0,Component:RTL|Component:FPV|IP:pinmux,False,0,2,0,606,2,False
+27932,[qemu] Earlgrey 1.0.0 Provisioning Support,open,2025-08-15 17:13:36+00:00,,,Component:QEMU,False,0,6,1,491,0,False
+27931,[qemu] Earlgrey 1.0.0 `rom_ext` support,closed,2025-08-15 17:06:08+00:00,2025-10-27 15:16:25+00:00,72.0,,False,0,9,1,359,0,False
+27930,[qemu] Earlgrey 1.0.0 spi_device TPM support,closed,2025-08-15 17:00:09+00:00,2025-11-13 15:34:58+00:00,89.0,Component:QEMU,False,0,2,1,91,0,False
+27929,[qemu] Earlgrey 1.0.0 `spi_device` passthrough suppport,closed,2025-08-15 16:46:23+00:00,2025-12-08 14:43:48+00:00,114.0,Component:QEMU,False,0,2,1,99,0,False
+27928,[qemu] Earlgrey 1.0.0 `kmac` updates,closed,2025-08-15 16:36:23+00:00,2025-10-27 15:38:06+00:00,72.0,Component:QEMU,False,0,3,1,102,0,False
+27927,[qemu] Earlgrey 1.0.0 `aes` updates,closed,2025-08-15 16:34:41+00:00,2025-10-13 22:24:17+00:00,59.0,Component:QEMU,False,0,3,1,105,0,False
+27926,[qemu] Earlgrey 1.0.0 `lc_ctrl` updates,closed,2025-08-15 16:30:41+00:00,2025-12-01 19:50:30+00:00,108.0,Component:QEMU,False,0,5,1,138,0,False
+27925,[dtgen] Add support for several PLICs,open,2025-08-15 16:11:45+00:00,,,,False,0,3,1,1716,0,False
+27923,[sw] Change the encoding of `status_t` and remove the module IDs,open,2025-08-15 14:11:51+00:00,,,,False,0,10,0,3339,2,False
+27921,[rnd_cnst] Document and streamline random netlist constant generation,closed,2025-08-15 13:01:37+00:00,2026-04-02 13:16:49+00:00,230.0,Component:Doc|Component:Tooling|Component:Security,False,0,1,3,1068,2,False
+27919,[topgen] C type names/enum members in `top_<name>.h` are subject to magical rewriting,open,2025-08-15 12:49:11+00:00,,,,False,0,0,0,2262,0,False
+27912,[clang] Compiler bug when compiling a ujson_derive file,open,2025-08-15 08:16:02+00:00,,,,False,0,0,0,996,0,False
+27910,[qemu] Earlgrey 1.0.0 `hmac` implementation,closed,2025-08-14 23:26:50+00:00,2025-10-27 15:37:56+00:00,73.0,Component:QEMU,False,0,4,1,178,0,False
+27909,[qemu] Implement `opentitantool` qemu transport,open,2025-08-14 19:59:19+00:00,,,Component:QEMU,False,0,16,2,363,1,False
+27898,[qemu] Make the development flow more ergonomic,closed,2025-08-14 06:33:58+00:00,2025-10-02 15:43:05+00:00,49.0,Component:QEMU,False,0,4,1,703,0,False
+27896,[qemu] Earlgrey 1.0.0 `i2c` implementation,closed,2025-08-14 06:16:53+00:00,2025-10-27 15:37:12+00:00,74.0,Component:QEMU,False,0,3,1,94,0,False
+27895,[qemu] Earlgrey 1.0.0 `usb` implementation,closed,2025-08-14 06:16:46+00:00,2025-11-17 21:41:19+00:00,95.0,Component:QEMU,False,0,19,1,1013,1,False
+27894,[qemu] Earlgrey 1.0.0 `keymgr` implementation,closed,2025-08-14 06:07:22+00:00,2025-10-13 22:16:31+00:00,60.0,Component:QEMU,False,0,8,1,539,0,False
+27893,build tock kernel error,open,2025-08-14 02:03:27+00:00,,,,False,0,3,0,225,1,False
+27885,[ipgen/multitop/dtgen/reggen] Issues related having instances with different parameters,open,2025-08-13 11:35:37+00:00,,,,False,0,1,0,936,0,False
+27884,"[doc,otp_ctrl] Fix documentation regarding reads of digests",closed,2025-08-13 02:44:12+00:00,2025-09-23 13:50:33+00:00,41.0,Component:Doc|IP:otp_ctrl,False,0,2,1,396,0,False
+27883,Making top-level parameters localparams,open,2025-08-12 17:06:25+00:00,,,,False,0,0,2,632,0,False
+27876,[test-triage] [rom_e2e_sigverify_always_a_bad_b_bad_test_unlocked0],open,2025-08-12 07:23:21+00:00,,,Component:TestTriage,False,0,0,0,2847,0,False
+27874,"[dv,cip_scoreboard] Fix handling d_channel when protocol errors trigger d_error",open,2025-08-11 20:58:49+00:00,,,Component:DV,True,0,6,1,808,2,False
+27866,"[sw,util] Find strategy for target selection in mapfile to json script",open,2025-08-11 09:43:37+00:00,,,SW:opentitantool,False,0,2,2,580,0,False
+27859,[otp_ctrl] Access to the key derivation interface from software + some questions about secret partitions,open,2025-08-09 01:38:28+00:00,,,,False,0,0,0,1979,0,False
+27853,"[hw,dma,doc] Split theory_of_operation and programmers guide",open,2025-08-08 10:19:34+00:00,,,,False,0,0,0,832,0,False
+27852,Tracking issue for deferred backporting fixes,open,2025-08-08 09:46:48+00:00,,,,False,0,0,1,570,0,False
+27850,Document the top HJSON format,open,2025-08-07 20:05:42+00:00,,,,False,0,0,0,145,0,False
+27847,"[crypto, test] Test artifacts are polluting OTBN DMEM",closed,2025-08-07 15:30:53+00:00,2025-08-22 04:58:58+00:00,14.0,SW:cryptolib,False,0,1,1,1061,0,False
+27838,Making the OpenTitan repository usable as a bazel dependency,open,2025-08-06 15:34:36+00:00,,,,False,0,1,0,652,0,False
+27830,[cw340] Unable to get UART1 output from CW340,closed,2025-08-06 05:21:04+00:00,2025-08-06 22:09:45+00:00,0.0,,False,0,2,0,1288,0,False
+27829,[otp_ctrl] Bug in `dif_otp_ctrl_read_blocking` causes out of range check to not execute when it should,open,2025-08-05 23:16:52+00:00,,,,False,0,1,0,1254,0,False
+27826,[bazel] MODULE.bazel.lock is modified when PROV_EXTS_DIR is set,open,2025-08-05 15:14:17+00:00,,,,False,0,0,0,1227,0,False
+27813,[third_party] Unpinned third_party/hwtrust dependency in earlgrey_1.0.0,open,2025-08-04 16:05:30+00:00,,,,False,0,10,2,1479,1,False
+27812,[chip-test] [chip_sw_alert_handler_lpg_sleep_mode_alerts] Error:[CHECK-fail: testing_utilities != ((void*)0)],open,2025-08-04 09:59:06+00:00,,,Component:ChipLevelTest,False,0,0,0,2381,1,False
+27810,"[test-triage, vcs] Simulating entropy_src_rng4bits with VCS",closed,2025-08-04 08:49:37+00:00,2025-09-01 09:12:52+00:00,28.0,Component:DV|IP:entropy_src,True,0,7,1,1215,1,False
+27802,[dma] V1+V2 Review & Signoff,open,2025-08-01 15:29:39+00:00,,,IP:dma,False,0,0,3,2635,0,False
+27801,[dma] DV environment checks (V2 subtask),open,2025-08-01 15:27:56+00:00,,,IP:dma,False,0,1,1,966,0,False
+27800,[dma] DV_DOC_TESTPLAN_REVIEWED (V2 item),open,2025-08-01 15:27:21+00:00,,,IP:dma,False,0,1,1,530,0,False
+27799,[dma] DV_DOC_COMPLETED (V2 item),open,2025-08-01 15:27:10+00:00,,,IP:dma,False,0,0,1,487,0,False
+27798,[dma] DESIGN_SPEC_REVIEWED (V1 item),open,2025-08-01 15:26:57+00:00,,,IP:dma,False,0,1,1,132,0,False
+27797,[dma] TESTPLAN_COMPLETED (V1 item),open,2025-08-01 15:26:33+00:00,,,IP:dma,False,0,0,1,210,0,False
+27796,[ac_range_check] V1+V2 Review & Signoff,open,2025-08-01 15:25:53+00:00,,,IP:ac_range_check,False,0,0,3,2644,0,False
+27795,[ac_range_check] DV environment checks (V2 subtask),open,2025-08-01 15:24:58+00:00,,,IP:ac_range_check,False,0,1,1,966,0,False
+27794,[ac_range_check] DV_DOC_TESTPLAN_REVIEWED (V2 item),open,2025-08-01 15:24:06+00:00,,,IP:ac_range_check,False,0,1,1,530,0,False
+27793,[ac_range_check] DV_DOC_COMPLETED (V2 item),open,2025-08-01 15:23:39+00:00,,,IP:ac_range_check,False,0,1,1,460,0,False
+27792,[ac_range_check] DESIGN_SPEC_REVIEWED (V1 item),open,2025-08-01 15:23:10+00:00,,,IP:ac_range_check,False,0,1,1,132,0,False
+27791,[ac_range_check] TESTPLAN_COMPLETED (V1 item),open,2025-08-01 15:22:43+00:00,,,IP:ac_range_check,False,0,0,1,210,0,False
+27780,[chip-test] [rom_e2e_asm_init_rma] ERROR: [Bitstream cache not initialized properly.],closed,2025-08-01 06:40:36+00:00,2025-08-04 11:14:32+00:00,3.0,Component:ChipLevelTest,False,0,7,0,2135,1,False
+27777,"[crypto, rsa] Harden Exponentiation",closed,2025-07-31 06:14:52+00:00,2025-10-27 08:09:52+00:00,88.0,SW:cryptolib,False,0,2,1,2695,0,False
+27769,[crypto] Harden ECDSA signature verification based on recent paper,closed,2025-07-30 07:17:21+00:00,2025-09-25 12:20:02+00:00,57.0,SW:cryptolib,False,0,3,2,150,0,False
+27767,[soc_dbg_ctrl] V1 Review & Signoff,open,2025-07-29 22:54:04+00:00,,,IP:soc_dbg_ctrl,False,0,0,3,1651,0,False
+27766,[soc_dbg_ctrl] TESTPLAN_REVIEWED (V1 item),open,2025-07-29 22:52:59+00:00,,,IP:soc_dbg_ctrl,False,0,1,1,453,0,False
+27765,[soc_dbg_ctrl] DV_DOC_DRAFT_COMPLETED (V1 item),open,2025-07-29 22:52:16+00:00,,,IP:soc_dbg_ctrl,False,0,1,1,606,0,False
+27764,[soc_dbg_ctrl] DESIGN_SPEC_REVIEWED (V1 item),open,2025-07-29 22:51:43+00:00,,,IP:soc_dbg_ctrl,False,0,1,1,132,0,False
+27763,[soc_dbg_ctrl] TESTPLAN_COMPLETED (V1 item),open,2025-07-29 22:49:59+00:00,,,IP:soc_dbg_ctrl,False,0,0,1,210,0,False
+27762,[racl_ctrl] V1 Review & Signoff,open,2025-07-29 22:48:42+00:00,,,IP:racl_ctrl,False,0,0,3,1662,0,False
+27761,[racl_ctrl] TESTPLAN_REVIEWED (V1 item),open,2025-07-29 22:48:11+00:00,,,IP:racl_ctrl,False,0,1,1,453,0,False
+27760,[racl_ctrl] DV_DOC_DRAFT_COMPLETED (V1 item),open,2025-07-29 22:47:23+00:00,,,IP:racl_ctrl,False,0,0,1,606,0,False
+27759,[racl_ctrl] DESIGN_SPEC_REVIEWED (V1 item),open,2025-07-29 22:46:55+00:00,,,IP:racl_ctrl,False,0,1,1,132,0,False
+27758,[racl_ctrl] TESTPLAN_COMPLETED (V1 item),open,2025-07-29 22:46:06+00:00,,,IP:racl_ctrl,False,0,3,1,210,0,False
+27757,[mbx] V1 Review & Signoff,open,2025-07-29 22:43:30+00:00,,,IP:mailbox,False,0,0,3,1653,0,False
+27756,[mbx] TESTPLAN_REVIEWED (V1 item),open,2025-07-29 22:40:05+00:00,,,IP:mailbox,False,0,1,1,453,0,False
+27754,[mbx] DV_DOC_DRAFT_COMPLETED (V1 item),open,2025-07-29 22:37:28+00:00,,,IP:mailbox,False,0,0,1,606,0,False
+27753,[mbx] DESIGN_SPEC_REVIEWED (V1 item),open,2025-07-29 22:31:57+00:00,,,IP:mailbox,False,0,1,1,132,0,False
+27752,[mbx] TESTPLAN_COMPLETED (V1 item),open,2025-07-29 22:29:59+00:00,,,IP:mailbox,False,0,0,1,210,0,False
+27750,Test fails due to unrecognized hierarchy in $assertoff task.,closed,2025-07-29 13:53:22+00:00,2026-04-13 13:27:59+00:00,257.0,,False,0,3,0,1085,1,False
+27735,[soc_dbg_ctrl] FEATURE_COMPLETE (D2 item),open,2025-07-28 13:12:55+00:00,,,IP:soc_dbg_ctrl,False,0,1,1,275,0,False
+27734,[soc_dbg_ctrl] Design specification checks / updates,open,2025-07-28 13:12:00+00:00,,,IP:soc_dbg_ctrl,False,0,1,1,867,0,False
+27733,[racl_ctrl] FEATURE_COMPLETE (D2 item),open,2025-07-28 13:10:08+00:00,,,IP:racl_ctrl,False,0,1,1,274,0,False
+27732,[racl_ctrl] Design specification checks / updates,open,2025-07-28 13:09:34+00:00,,,IP:racl_ctrl,False,0,1,1,867,0,False
+27731,[mbx] FEATURE_COMPLETE (D2 item),open,2025-07-28 13:07:00+00:00,,,IP:mailbox,False,0,1,1,274,0,False
+27730,[mbx] Design specification checks / updates,open,2025-07-28 13:06:12+00:00,,,IP:mailbox,False,0,1,1,867,0,False
+27729,[dma] FEATURE_COMPLETE (D2 item),open,2025-07-28 13:03:40+00:00,,,IP:dma,False,0,1,1,274,0,False
+27728,[dma] Design specification checks / updates,open,2025-07-28 13:02:45+00:00,,,IP:dma,False,0,1,1,867,0,False
+27727,[ac_range_check] FEATURE_COMPLETE (D2 item),open,2025-07-28 11:59:12+00:00,,,IP:ac_range_check,False,0,1,1,274,0,False
+27726,[ac_range_check] Design specification checks / updates,open,2025-07-28 11:56:02+00:00,,,IP:ac_range_check,False,0,0,1,867,0,False
+27722,"[sw, bazel, ccache] bazel test failed",closed,2025-07-28 07:19:19+00:00,2025-09-25 06:41:53+00:00,58.0,,False,0,2,0,1307,1,False
+27719,"Race condition if use clk_rst_if, so clock not guaranteed to be activated.",open,2025-07-25 16:58:34+00:00,,,,False,0,1,0,1744,0,False
+27709,[crypto] secp256k1 not supported,open,2025-07-25 07:45:42+00:00,,,SW:cryptolib,False,0,0,0,307,0,False
+27708,[ottf] Investigate USB test failures with alert catching enabled,open,2025-07-24 21:54:00+00:00,,,,False,0,0,0,2557,1,False
+27707,[python] Move UV to a dev dependency,closed,2025-07-24 20:33:26+00:00,2025-08-04 10:58:55+00:00,10.0,,False,0,5,0,1328,0,False
+27697,[RFC] Fuse Zeroization and In-Field Programming,closed,2025-07-23 17:33:17+00:00,2025-11-25 23:49:56+00:00,125.0,RFC:Approved|FIPS,False,0,19,4,6007,1,False
+27690,[crypto] ECC implementation FIPS compliance,closed,2025-07-23 12:05:17+00:00,2025-12-05 13:57:50+00:00,135.0,SW:cryptolib|FIPS,False,0,1,1,367,0,False
+27688,[component] Incomplete Structure Literal Causes Vivado Error in `spid_common.sv`,open,2025-07-23 09:56:46+00:00,,,,False,0,0,0,1561,1,False
+27683,"[sw,driver] keymgr driver idle status handling",open,2025-07-23 05:29:09+00:00,,,Type:Question|SW:ROM_EXT|IP:keymgr,False,0,3,0,1385,0,False
+27680,"[fpv,pinmux] Add lc_hw_debug_clr_i in fpv/tb/pinmux_tb.sv.tpl",closed,2025-07-22 17:44:54+00:00,2025-08-18 09:57:26+00:00,26.0,Component:DV|IP:pinmux,True,0,4,1,119,1,False
+27675,[component] Missing $sformatf argument in alert_receiver_driver.sv,closed,2025-07-22 13:09:38+00:00,2026-06-17 09:36:36+00:00,329.0,,False,0,2,0,1128,0,False
+27674,[crypto] Make ECC point on curve check callable from ibex,closed,2025-07-22 10:14:23+00:00,2026-03-23 06:42:25+00:00,243.0,SW:cryptolib,False,0,3,1,337,0,False
+27670,[tools] updating the version of verilator,open,2025-07-21 16:01:59+00:00,,,Component:Tooling,False,0,0,0,388,0,False
+27669,[crypto] Modular multiplicative inverse computation - potential consolidation,open,2025-07-21 15:51:49+00:00,,,SW:cryptolib,False,0,3,2,1681,0,False
+27668,"[chip, dv] Test chip_sw_rstmgr_rst_cnsty_escalation failing on Xcelium",closed,2025-07-21 15:46:49+00:00,2025-09-08 06:46:09+00:00,48.0,,False,0,1,0,1557,1,False
+27667,Porting TLTs on Xcelium,open,2025-07-21 14:57:11+00:00,,,,False,0,0,0,1760,0,False
+27665,"[rtl,otp_ctrl] Report lc_gate fsm error as fatal_prim_otp_alert",open,2025-07-21 00:46:05+00:00,,,IP:otp_ctrl,False,0,1,2,293,1,False
+27659,"[Chip, dv] Inconsistency b/w parent and child reset in rstmgr_cnsty_chk.sv",closed,2025-07-18 14:16:39+00:00,2025-08-18 09:19:29+00:00,30.0,Component:DV|Component:ChipLevelTest,True,0,6,0,1626,1,False
+27651,[util/design] How to get raw (unhashed) transition_token for LC transition ?,open,2025-07-18 02:33:47+00:00,,,,False,0,0,0,1308,0,False
+27648,[crypto] Resharing ECC keys and scalar blinding,closed,2025-07-17 11:58:45+00:00,2025-09-30 11:28:31+00:00,74.0,SW:cryptolib,False,0,5,3,1721,0,False
+27646,[crypto] Add function to set / check chip configuration,closed,2025-07-17 07:43:41+00:00,2025-10-31 08:49:50+00:00,106.0,SW:cryptolib,False,0,3,0,456,0,False
+27641,[crypto] Consequently use OTBN's instruction counter,closed,2025-07-16 08:28:31+00:00,2025-10-21 05:24:18+00:00,96.0,SW:cryptolib,False,0,2,1,464,0,False
+27640,[crypto] Adding a seed input to the ECC key gen API,closed,2025-07-16 08:22:30+00:00,2025-10-21 09:50:46+00:00,97.0,SW:cryptolib,False,0,2,0,82,0,False
+27639,[crypto] Harden RSA against FI and SCA,closed,2025-07-16 08:19:16+00:00,2025-10-29 13:17:58+00:00,105.0,SW:cryptolib,False,0,2,1,140,0,False
+27638,[crypto] Simplify random_order,closed,2025-07-16 08:18:53+00:00,2025-09-09 11:39:23+00:00,55.0,SW:cryptolib,False,0,5,3,1128,0,False
+27637,[crypto] Protect AES-GCM against SCA,closed,2025-07-16 08:15:49+00:00,2025-11-06 10:46:41+00:00,113.0,SW:cryptolib,False,0,3,1,271,0,False
+27634,[crypto] Bug in `aes_gcm_*crypt` causes incorrect behavior when the full plaintext size is less than the block size,closed,2025-07-16 00:31:44+00:00,2025-11-07 09:57:18+00:00,114.0,,False,0,3,2,3301,1,False
+27632,[crypto] Protect HMAC streaming implementation against FI,closed,2025-07-15 11:29:09+00:00,2026-04-30 13:10:54+00:00,289.0,SW:cryptolib,False,0,4,1,330,0,False
+27628,[rom_ext] Next Minimum Security Version not properly bound,closed,2025-07-14 21:48:06+00:00,2025-08-21 18:11:13+00:00,37.0,Type:Bug|SW:ROM_EXT,True,0,0,1,748,2,True
+27593,"[sival,ci] SiVal-only tests must specify some DV `stage` property",open,2025-07-09 15:16:09+00:00,,,Component:Software|Component:CI,False,0,0,0,761,0,False
+27587,"[dv,dvsim,tooling,test-triage] dvsim's Intelligent Alerts: Debug Faster, Triage Smarter.",open,2025-07-09 07:47:29+00:00,,,,False,0,3,0,3803,0,False
+27568,[bazel] Unclear interaction between `opentitan_test` features and CLI,open,2025-07-07 12:55:49+00:00,,,,False,0,2,0,1598,0,False
+27560,[alert_handler] Mismatch between documentation and implementation,open,2025-07-04 13:28:01+00:00,,,IP:alert_handler,False,0,6,3,627,1,False
+27541,i2c_target_fsm does not allow acq fifo to completely fill,closed,2025-07-02 21:01:31+00:00,2025-07-02 21:48:42+00:00,0.0,,False,0,2,0,2128,0,False
+27533,[jtag] jtag connection docs,closed,2025-07-02 07:07:08+00:00,2025-07-10 15:58:26+00:00,8.0,,False,0,3,0,238,0,False
+27526,[kmac] KMAC entropy mode specification mismatch,open,2025-07-01 14:54:17+00:00,,,IP:kmac,False,0,2,2,3942,1,False
+27506,"[prim,secded] Use instantiation macros in parameterized contexts",open,2025-06-27 17:02:43+00:00,,,,False,0,0,1,247,0,False
+27505,"[prim,secded] Use instantiation macros in fpv tb",open,2025-06-27 16:54:05+00:00,,,,False,0,0,1,104,0,False
+27498,[rom] misconfigured rstmgr cpu crash dump when activated by OTP,closed,2025-06-26 09:38:30+00:00,2025-09-26 05:29:05+00:00,91.0,SW:ROM,False,0,2,1,673,1,False
+27496,[rom_ext] Incorrect unit test silicon_creator for manifest,open,2025-06-25 16:53:21+00:00,,,,False,0,0,1,1935,1,False
+27492,[opentitantool] Ensure that small extension data payloads do not cross page boundary,open,2025-06-24 20:56:12+00:00,,,SW:opentitantool,False,0,0,2,246,0,False
+27491,[sram_ctrl] Prevent software from initializing SRAM_CTRL with deterministic keys,open,2025-06-24 16:31:00+00:00,,,Component:RTL|Component:Security|IP:sram_ctrl,False,0,1,1,1583,3,False
+27487,[util/design] Questions on Generating OTP vmem Files with Known Token Values,open,2025-06-23 16:04:53+00:00,,,,False,0,0,0,3009,0,False
+27471,[entropy_src/dv] Improve tests pass rates of `RngBusWidth=16` parametrization,closed,2025-06-19 16:11:47+00:00,2025-09-19 20:33:55+00:00,92.0,Component:DV|IP:entropy_src,True,0,0,0,408,1,False
+27463,"[tests, crypto] Enable KMAC tests on CW340.",open,2025-06-18 13:48:14+00:00,,,Component:Software|IP:kmac,False,0,0,0,495,0,False
+27451,"[otp_ctrl,dv] Fields lc_cnt and lc_state swapped in the base vseq",open,2025-06-16 13:31:53+00:00,,,Component:DV|IP:otp_ctrl,True,0,4,0,857,1,False
+27438,[lc_ctrl/dv] V2S signoff,open,2025-06-13 17:28:13+00:00,,,Component:DV|IP:lc_ctrl|Milestone:V2|Milestone:V2S,True,0,0,0,70,1,False
+27437,[rv_dm/dv] V2S sign-off,open,2025-06-13 17:26:18+00:00,,,Component:DV|IP:rv_dm|Milestone:V2|Milestone:V2S,True,0,0,0,70,1,False
+27436,[lc_ctrl/dv] Verify `lc_hw_debug_clr_o`,open,2025-06-13 17:23:50+00:00,,,Component:DV|IP:lc_ctrl,True,0,0,0,160,1,False
+27435,[rv_dm/dv] Verify `lc_hw_debug_clr_i`,open,2025-06-13 17:19:00+00:00,,,Component:DV|IP:rv_dm,True,0,0,0,439,1,False
+27434,[USB] Interface for rxenable_out with set_nak_out is non-atomic,closed,2025-06-13 16:44:30+00:00,2025-06-24 15:42:59+00:00,10.0,IP:usbdev,False,0,5,2,1488,0,False
+27419,"[tlul_adapter_reg,rtl] Inconsistent error reporting on the D channel with AccessLatency=1",closed,2025-06-11 16:26:41+00:00,2025-06-14 14:32:12+00:00,2.0,Component:RTL|IP:tlul,False,0,0,0,2003,2,False
+27414,[dice] Potential boot-loop in DICE certificate creation,closed,2025-06-11 15:00:21+00:00,2025-06-19 05:28:28+00:00,7.0,SW:ROM_EXT,False,0,1,1,2884,0,False
+27409,"[dv,fusesoc-upgrade] Provide a mechanism to assign integrator DFT ports",open,2025-06-11 09:24:33+00:00,,,Component:DV|IP:prim|IP:prim_generic,True,0,1,1,709,1,False
+27398,"[hw,alert_handler,rtl] Create enum for alert indices for explicit assignment",closed,2025-06-10 05:51:48+00:00,2025-07-17 19:46:03+00:00,37.0,,False,0,0,0,628,0,False
+27388,"[top_darjeeling] unresolved parameter ""Addrcheck""",open,2025-06-08 09:35:43+00:00,,,Component:Darjeeling,False,0,0,0,235,0,False
+27387,[dvsim simulation] Bazel and Dvsim compatibility,closed,2025-06-06 20:09:44+00:00,2025-06-07 18:10:01+00:00,0.0,,False,0,1,0,880,0,False
+27381,[rom] Private SRAM initialization is gated by CREATOR_SW_CFG_SRAM_KEY_RENEW_EN,closed,2025-06-06 13:32:41+00:00,2026-01-16 11:08:20+00:00,223.0,Component:Software|Component:Security|SW:ROM|IP:sram_ctrl,False,0,6,4,492,2,False
+27380,"[ac_range_check,dv] Have t he ability to downgrade the error for a_chan_count via a cfg option",closed,2025-06-06 13:27:24+00:00,2025-06-23 18:11:17+00:00,17.0,Component:DV|IP:ac_range_check,True,0,2,1,363,2,False
+27376,"[tlul,rtl] Incorrect timing for d_valid in tl_reg_adapter if AccessLatency is positive",closed,2025-06-06 09:59:38+00:00,2025-06-06 13:32:56+00:00,0.0,Type:Bug|Component:RTL|IP:tlul,True,0,2,0,642,3,True
+27375,[dv] Explore how reset handling can be improved,open,2025-06-06 09:00:21+00:00,,,Component:DV|IP:all,True,0,3,6,433,1,False
+27374,[TOP_EARLGREY] doubt in Testbench and RTL top,open,2025-06-06 08:58:38+00:00,,,,False,0,0,0,365,0,False
+27373,"[hw,ac_range_check,dv] Follow-up fixes for the AC Range check DV environment",closed,2025-06-06 07:53:13+00:00,2025-06-06 19:17:46+00:00,0.0,Component:DV|IP:ac_range_check,True,0,3,1,833,1,False
+27372,[doc] Prim libraries & primgen documentation is outdated,closed,2025-06-06 06:07:44+00:00,2025-06-26 13:19:18+00:00,20.0,Component:Doc|Component:Tooling|IP:prim,False,0,0,3,336,0,False
+27371,DVSim fails on fusesoc after prim_generic changes,closed,2025-06-05 21:42:29+00:00,2025-06-06 09:08:00+00:00,0.0,Tool:dvsim,False,0,3,4,607,1,False
+27367,[doc] mdBook preprocessor problems,open,2025-06-05 14:22:44+00:00,,,Component:Doc,False,0,0,1,263,0,False
+27365,[doc] Run Lychee link checker in Bazel sandbox,open,2025-06-05 12:51:52+00:00,,,Component:Doc,False,0,0,0,371,0,False
+27363,[Python Package] Python dependency errors when using bazel - possible Solution,open,2025-06-05 09:46:39+00:00,,,,False,0,3,0,1258,1,False
+27360,[ROM][rom_ext] prevent booting firmware placed at the incorrect slot,open,2025-06-05 01:25:47+00:00,,,,False,0,0,1,660,1,False
+27352,"[ac_range_check,dv] Move lock range_cg sampling from seq to scoreboard",open,2025-06-04 09:14:12+00:00,,,Component:DV|IP:ac_range_check,True,0,0,1,389,1,False
+27347,"[prim,prim_pkg] prim_pkg is now deprecated. It's use should be phased out.",open,2025-06-03 15:53:43+00:00,,,,False,0,0,0,301,0,False
+27346,"[bazel,fusesoc] Non-hermetic  use of /tmp directory",open,2025-06-03 15:49:04+00:00,,,,False,0,0,2,208,0,False
+27340,[sw] Broken license headers in files from tock,open,2025-06-03 11:17:29+00:00,,,Component:Software,False,0,0,1,421,1,False
+27330,[rom_ext] ISFB erase flow not working,closed,2025-05-30 20:39:54+00:00,2025-05-30 20:52:08+00:00,0.0,SW:ROM_EXT,False,0,1,1,3390,0,False
+27328,Changes to pr_change_check.yml breaks CI,closed,2025-05-30 19:13:33+00:00,2025-05-30 19:17:27+00:00,0.0,,False,0,0,0,862,1,False
+27303,[FPGA Test CW340] OpenTitan simplified bitstream for SCA on AES,open,2025-05-26 12:40:11+00:00,,,,False,0,3,0,1278,0,False
+27300,[ci] Add Automatic License Checking to CI Pipeline,open,2025-05-23 18:01:48+00:00,,,Component:CI,False,0,4,0,2209,0,False
+27298,[crypto] Rename HARDENED_TRY.,open,2025-05-23 16:12:49+00:00,,,SW:cryptolib,False,0,0,0,91,0,False
+27275,[manuf] Refactor build & signing rules for the perso binaries,open,2025-05-21 16:30:14+00:00,,,Type:Cleanup,False,0,0,2,784,0,False
+27274,[prim_diff_decode] Fault injection,closed,2025-05-21 15:18:47+00:00,2026-04-30 10:38:54+00:00,343.0,,False,0,5,0,2015,0,False
+27258,[RFC] AES-GCM Hardware Support and SCA Hardening,closed,2025-05-20 21:34:24+00:00,2026-05-22 11:33:07+00:00,366.0,RFC:Approved|IP:aes,False,0,6,1,1684,0,False
+27243,[crypto] Ensure keys get re-masked regularly throughout cryptolib.,closed,2025-05-19 14:14:17+00:00,2025-10-23 07:19:27+00:00,156.0,SW:cryptolib,False,0,2,1,580,0,False
+27233,[verilator] using verilator for getting traces for unmasked AES in ECB mode,open,2025-05-16 14:23:23+00:00,,,,False,0,4,0,2603,0,False
+27206,[sw/silicon_creator/lib/shutdown] Wrong value written to DIS register of flash_ctrl in shutdown_flash_kill.,open,2025-05-13 13:22:21+00:00,,,,False,0,1,0,1755,1,False
+27167,[top_darjeeling] Countermeasures in HJSON and RTL,closed,2025-05-08 14:05:43+00:00,2025-05-08 14:10:53+00:00,0.0,Component:Darjeeling|IP:keymgr_dpe,False,0,0,0,1607,0,False
+27158,[documentation] Earlgrey software strap pins,open,2025-05-08 10:17:19+00:00,,,Component:Doc,False,0,4,0,436,0,False
+27153,[manuf] develop DV test to perform a UJSON string RX operation,open,2025-05-07 21:20:49+00:00,,,Manufacturing,False,0,1,0,107,0,False
+27152,[manuf] develop DV test to perform a UJSON string TX operation,open,2025-05-07 21:19:41+00:00,,,Manufacturing,False,0,1,0,840,0,False
+27151,[manuf] develop DV test to perform a multi-slot SPI bootstrap operation,closed,2025-05-07 21:11:12+00:00,2025-08-05 18:07:26+00:00,89.0,Manufacturing,False,0,1,1,589,0,False
+27150,[manuf] develop DV test to perform a single SPI flash page program operation,closed,2025-05-07 21:08:37+00:00,2025-05-14 06:22:06+00:00,6.0,Manufacturing,False,0,1,1,326,0,False
+27149,[manuf] develop DV test to perform flash erase portion of SPI bootstrap,closed,2025-05-07 21:05:17+00:00,2025-05-08 17:22:53+00:00,0.0,Manufacturing,False,0,1,1,286,0,False
+27141,[base] Adjust hardening primitives to use function pointers for randomness.,open,2025-05-07 15:55:21+00:00,,,SW:ROM_EXT|SW:cryptolib,False,0,0,0,386,0,False
+27120,"[rescue, rom_ext] DFU rescue may not report disallowed command errors",closed,2025-05-05 15:15:36+00:00,2025-09-04 15:42:18+00:00,122.0,,False,0,1,0,8489,1,False
+27117,[cryptolib] Add base point validation checks to ECDSA as FI hardening,closed,2025-05-05 12:07:29+00:00,2025-09-03 12:16:44+00:00,121.0,SW:cryptolib,False,0,8,1,1384,0,False
+27112,"[soc_dbg_ctrl,dv] Dynamically drive/monitor miscellaneous IOs",closed,2025-05-05 08:56:02+00:00,2025-05-12 13:04:26+00:00,7.0,Component:DV|IP:soc_dbg_ctrl,True,0,0,1,190,1,False
+27110,"[util,secded] Support additional automation",open,2025-05-04 05:24:26+00:00,,,Component:Tooling|Component:RTL|IP:prim,False,0,1,1,544,1,False
+27096,[soc_dbg_ctrl/dv] CSR / mem test suite activated and passing,closed,2025-05-02 08:17:00+00:00,2025-05-12 07:47:54+00:00,9.0,Component:DV|IP:soc_dbg_ctrl,True,0,2,1,0,1,False
+27095,[soc_dbg_ctrl/dv] X / unknown checks on DUT outputs added,closed,2025-05-02 08:15:44+00:00,2025-05-06 13:22:52+00:00,4.0,,False,0,0,1,0,0,False
+27084,[lc_ctrl] Deprecate TAP inside lc_ctrl in favor of DMI,open,2025-05-01 01:56:06+00:00,,,IP:lc_ctrl,False,0,2,0,647,0,False
+27075,"[multi_top,clock] Make dv_lib clock frequencies compatible with multi-top",open,2025-04-30 01:56:44+00:00,,,Component:DV|Component:MultiTop,True,0,0,2,868,1,False
+27055,"[rom_ctrl,rtl] Unnecessary check in rom_ctrl_compare",closed,2025-04-26 20:31:11+00:00,2025-04-28 22:00:46+00:00,2.0,Component:RTL|IP:rom_ctrl,False,0,1,0,429,1,False
+27053,[topgen] Integer literal width for inter-module signal default not respected,open,2025-04-25 22:52:52+00:00,,,,False,0,0,0,1219,0,False
+27051,[cryptolib] Algorithms for considered for hardening review ,open,2025-04-25 16:03:19+00:00,,,SW:cryptolib,False,0,1,0,1568,0,False
+27045,"[sival, kmac] No EDN timeout in fpga_cw340_sival_rom_ext",open,2025-04-25 09:09:34+00:00,,,IP:kmac,False,0,0,0,521,1,False
+27043,[toolchain] how to point the local toolchan  in the bazel rule？,open,2025-04-24 02:52:12+00:00,,,,False,0,1,0,91,0,False
+27042,"[ip,macros] Move otp and flash macros out of prim*",open,2025-04-23 22:55:23+00:00,,,Component:RTL|Component:MultiTop|Component:IntegratedFoundational,False,0,1,3,4088,1,False
+27040,[rom_ext] [Feature Request] OwnerUnlock operation should clear specified region of flash,open,2025-04-23 21:47:44+00:00,,,SW:ROM_EXT,False,0,0,1,364,0,False
+27033,[component] CentOS 7 does not support clang. How can I modify the bazel configuration to replace clang with gcc,open,2025-04-23 08:23:02+00:00,,,,False,0,1,0,269,0,False
+27030,"[sverilog,foreach] Fix nested foreach loops",closed,2025-04-22 16:43:45+00:00,2025-04-30 09:52:24+00:00,7.0,Component:DV|Component:RTL,True,0,1,2,5605,2,False
+27020,[otp_ctrl] Spurious FSM state transition during consistency/integrity check,open,2025-04-21 09:16:56+00:00,,,Type:Question|IP:otp_ctrl,False,0,1,2,1361,0,False
+27006,[spi_host] Replace update_configopts by predicting values using RAL,open,2025-04-17 15:01:25+00:00,,,,False,0,0,1,318,0,False
+27000,[top_darjeeling] Update otp_ctrl generated docs,closed,2025-04-17 05:19:37+00:00,2025-04-25 21:50:57+00:00,8.0,Component:Darjeeling,False,0,0,3,443,0,False
+26988,[chip-test]kmac_error_conditions_test failing in silicon regression tests,open,2025-04-16 01:26:15+00:00,,,Component:ChipLevelTest|Component:SiliconValidation,False,0,0,1,1141,3,False
+26963,[component] it doesn't generate .fst file when i run smoke test with bazel,open,2025-04-14 09:58:55+00:00,,,,False,0,2,0,1134,0,False
+26955,[soc_proxy] D1 signoff,open,2025-04-11 13:28:03+00:00,,,,False,0,0,2,0,0,False
+26954,[soc_dbg_ctrl] D1+D2 Review & Signoff,open,2025-04-11 13:27:33+00:00,,,IP:soc_dbg_ctrl,False,0,0,2,2062,0,False
+26953,[racl_ctrl] D1+D2 Review & Signoff,open,2025-04-11 13:27:06+00:00,,,IP:racl_ctrl,False,0,3,2,2095,0,False
+26952,[mbx] D1+D2 Review & Signoff,open,2025-04-11 13:26:37+00:00,,,IP:mailbox,False,0,0,2,2053,0,False
+26951,[dma] D1+D2 Review & Signoff,open,2025-04-11 13:25:48+00:00,,,IP:dma,False,0,0,2,2054,0,False
+26950,[ac_range_check] D1+D2 Review & Signoff,open,2025-04-11 13:25:12+00:00,,,IP:ac_range_check,False,0,0,2,2074,0,False
+26949,[soc_dbg_ctrl] Write theory of operation and programmer's guide,open,2025-04-11 13:24:17+00:00,,,Component:Doc|IP:soc_dbg_ctrl,False,0,1,2,0,0,False
+26948,[mbx] Write programmer's guide and theory of operation,closed,2025-04-11 13:23:26+00:00,2025-06-02 09:12:58+00:00,51.0,Component:Doc|IP:mailbox,False,0,2,2,0,0,False
+26947,[dma] Write programmer's guide,closed,2025-04-11 13:22:39+00:00,2025-05-13 14:31:03+00:00,32.0,Component:Doc|IP:dma,False,0,0,2,0,0,False
+26946,[ac_range_check] Write programmer's guide,open,2025-04-11 13:21:46+00:00,,,Component:Doc|IP:ac_range_check,False,0,0,2,0,0,False
+26945,[top_darjeeling] Update block diagram and datasheet,closed,2025-04-11 13:20:57+00:00,2025-05-12 10:31:19+00:00,30.0,Component:Doc|Component:Darjeeling,False,0,0,2,0,0,False
+26944,"[topgen,ipgen] Document recently added features",open,2025-04-11 13:20:04+00:00,,,Component:Doc|Component:Tooling,False,0,0,1,213,0,False
+26943,"[top_darjeeling,racl] Add top-level test plan items",open,2025-04-11 13:18:07+00:00,,,Component:DV|Component:Darjeeling,True,0,0,1,73,1,False
+26941,[cryptolib] Open SCA hardening TODOs,closed,2025-04-11 09:59:10+00:00,2026-04-08 12:19:07+00:00,362.0,SW:cryptolib,False,0,9,1,856,0,False
+26940,[cryptolib] Open FI hardening TODOs,closed,2025-04-11 08:51:47+00:00,2026-04-09 09:13:36+00:00,363.0,SW:cryptolib,False,0,11,3,570,1,False
+26939,[cryptolib] Implement missing 25519 ECC operations,closed,2025-04-11 08:31:16+00:00,2026-05-19 09:26:56+00:00,403.0,SW:cryptolib,False,0,3,1,320,0,False
+26934,[tests] Verify logic in `flash_ctrl_idle_low_power_test`,closed,2025-04-10 13:35:36+00:00,2025-04-28 13:47:26+00:00,18.0,,False,0,1,0,1741,0,False
+26931,[otp_ctrl] Deduce if flash key interface is needed from otp_ctrl_mmap.hjson,closed,2025-04-09 18:47:29+00:00,2025-04-26 08:35:34+00:00,16.0,IP:otp_ctrl,False,0,1,1,448,0,False
+26925,[ipgen] Unclear when to use templatization or SystemVerilog parameters,closed,2025-04-08 19:50:11+00:00,2025-06-27 22:42:55+00:00,80.0,,False,0,3,0,1746,0,False
+26920,[multitop] Add clock measurement extension field to the clkmgr DT,open,2025-04-08 16:00:18+00:00,,,,False,0,0,0,231,0,False
+26919,"[rom_ext, rescue] xmodem rescue protocol is not operational after the rescue firmware command is disallowed",closed,2025-04-08 15:35:13+00:00,2025-04-29 07:00:45+00:00,20.0,Component:Software,False,0,0,1,2113,0,False
+26906,[chip-test] Store access fault error in kmac_error_conditions_test,open,2025-04-07 17:10:06+00:00,,,Component:ChipLevelTest|Component:SiliconValidation,False,0,0,1,1946,3,False
+26905,[chip-test] clkmgr_jitter_frequency_test failing  in silicon regression tests,open,2025-04-07 16:57:40+00:00,,,Component:ChipLevelTest|Component:SiliconValidation,False,0,0,1,1165,3,False
+26902,[aon_timer] D3 RTL review,closed,2025-04-07 16:12:52+00:00,2025-04-09 14:51:59+00:00,1.0,,False,0,0,0,459,0,False
+26900,"[test-triage,earlgrey] chip_sw_ast_clk_rst_inputs",open,2025-04-07 16:03:01+00:00,,,Component:TestTriage,False,0,0,0,593,0,False
+26899,"[test-triage,earlgrey] chip_sw_power_sleep_load",open,2025-04-07 15:05:56+00:00,,,Component:TestTriage,False,0,0,0,645,0,False
+26883,[otp_ctrl] Verilator linting PartInvDefault breaks on overly long vector,open,2025-04-04 15:09:08+00:00,,,,False,0,0,0,951,0,False
+26882,"[test-triage, darjeeling] chip_sw_sleep_pin_mio_dio_val",open,2025-04-04 14:44:11+00:00,,,Component:TestTriage,False,0,0,0,1213,0,False
+26881,[component] chip_sw_uart_rand_baudrate,open,2025-04-04 14:27:14+00:00,,,Component:ChipLevelTest,False,0,0,0,919,0,False
+26880,"[Multitiop, test] chip_sw_uart_tx_rx",open,2025-04-04 13:23:15+00:00,,,Component:ChipLevelTest,False,0,0,0,899,0,False
+26879,"[test-triage, darjeeling] chip_sw_soc_proxy_external_alerts",open,2025-04-04 12:52:29+00:00,,,Component:TestTriage,False,0,0,1,1287,0,False
+26877,"[test-triage, darjeeling] chip_sw_rv_core_ibex_nmi_irq",open,2025-04-04 12:07:35+00:00,,,Component:TestTriage,False,0,0,0,2262,0,False
+26876,"[test-triage, darjeeling] chip_sw_rstmgr_cpu_info",open,2025-04-04 12:05:51+00:00,,,Component:TestTriage,False,0,0,0,2445,0,False
+26875,"[test-triage, darjeeling] chip_sw_rstmgr_alert_info",open,2025-04-04 12:02:57+00:00,,,Component:TestTriage,False,0,0,0,2450,0,False
+26874,"[test-triage, darjeeling] chip_sw_kmac_app_rom",open,2025-04-04 12:00:30+00:00,,,Component:TestTriage,False,0,0,0,2437,0,False
+26873,"[test-triage, darjeeling] chip_sw_keymgr_dpe_key_derivation",open,2025-04-04 11:57:12+00:00,,,Component:TestTriage,False,0,0,0,2636,0,False
+26871,"[test-triage, darjeeling]  chip_sw_sram_ctrl_scrambled_access",open,2025-04-04 10:54:55+00:00,,,Component:TestTriage,False,0,0,0,1260,0,False
+26860,"[test-triage, darjeeling] chip level tests needs a ROM.",open,2025-04-03 10:02:39+00:00,,,Component:TestTriage,False,0,0,0,6782,0,False
+26852,[doc/getting_started] Debug with GDB errors,open,2025-04-02 20:22:51+00:00,,,,False,0,3,0,2635,1,False
+26848,"[ac_range_check,dv] Replace tl_filt_t by a class wrapper",open,2025-04-02 16:32:35+00:00,,,Component:DV|IP:ac_range_check,True,0,0,1,85,1,False
+26846,[RFC] PQC Support on OTBN,open,2025-04-02 14:58:41+00:00,,,RFC:Approved|IP:otbn,False,0,13,4,2211,1,False
+26843,"[hmac,dv] Cleaner process kill improvement",open,2025-04-02 13:06:55+00:00,,,Component:DV|IP:hmac,True,0,0,1,272,1,False
+26842,"[fusesoc,instance_vlnv] Causing some assertions to fail",closed,2025-04-02 12:23:00+00:00,2025-04-02 19:23:49+00:00,0.0,,False,0,4,1,1582,1,False
+26808,"[test-triage, darjeeling] kJitterEnable.dat error",open,2025-03-31 15:17:26+00:00,,,Component:TestTriage,False,0,0,1,1169,1,False

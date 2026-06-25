@@ -1,0 +1,204 @@
+comment_text,label,label_name
+Coverage closure on track. Three blocks remaining.,0,normal
+Stuck. Analog team says they need more time. Not reflected in schedule.,1,blocker
+Cross-site dependency. India team waiting on US team. No response overnight.,1,blocker
+Sign-off meeting completed. All blocks cleared for tape-out.,0,normal
+Critical path item with no progress. Escalation needed immediately.,1,blocker
+DFT insertion complete for this IP. Moving to sign-off phase.,0,normal
+Timing margin positive on all critical paths. No concerns.,0,normal
+Regression infrastructure back up. All tests rerun. Results clean.,0,normal
+Escalate to program manager. DFT team says they cannot start without frozen RTL.,1,blocker
+RTL drop stable. Regression suite green. DV proceeding.,0,normal
+IP licensing confirmed. No tape-out blockers from legal.,0,normal
+No update for 8 days on a P0 bug. This is unacceptable. Escalate.,1,blocker
+Formal verification sign-off received. Moving to next block.,0,normal
+Blocked waiting for clock domain crossing analysis sign-off.,1,blocker
+Formal exhaustion taking too long. Need to discuss scope reduction urgently.,1,blocker
+DFT not started on this block. Tape-out is in 3 weeks. Critical path.,1,blocker
+Cannot proceed with coverage closure until IP delivery is confirmed.,1,blocker
+Chip-level test passing end to end. Ready for final sign-off.,0,normal
+Cross-team dependency resolved. Both teams aligned on interface.,0,normal
+Cannot start physical verification without final RTL freeze confirmation.,1,blocker
+Integration test stable for three consecutive runs. Ready for sign-off.,0,normal
+Coverage at 94 percent. Final push to close remaining gaps this week.,0,normal
+Dependency on PD team for floorplan approval is blocking DV start.,1,blocker
+No progress. Last comment was 12 days ago. Is anyone watching this?,1,blocker
+Blocked. Waiting on sign-off from security team for over 10 days.,1,blocker
+LEC clean not achieved after ECO. Blocking sign-off on this block.,1,blocker
+Dependency on software stack not resolved. Blocking chip-level tests.,1,blocker
+Waiting on emulation team to set up platform. Two week delay so far.,1,blocker
+Formal tool configuration updated. Rerunning proofs.,0,normal
+Memory controller interface spec frozen. Integration unblocked.,0,normal
+No progress since last month. This item needs to be escalated immediately.,1,blocker
+Verification sign-off blocked pending architecture decision on interface.,1,blocker
+Scan chain insertion complete. DFT team signing off.,0,normal
+DRC count not reducing. Physical design team not responding to queries.,1,blocker
+This has been open for 4 weeks with no assignee. Who owns this?,1,blocker
+Critical coverage gap in reset domain. Owner needed urgently.,1,blocker
+Dependency not tracked in program schedule. Just discovered it. Risk.,1,blocker
+Two weeks behind on coverage plan. Not enough resources assigned.,1,blocker
+Cannot start signoff without completed IR drop analysis. PD overloaded.,1,blocker
+Resource confirmed for this task. Starting tomorrow.,0,normal
+Regression failures since last RTL drop. Root cause not identified yet.,1,blocker
+Cannot merge until review comments addressed. Reviewer not available this week.,1,blocker
+Formal tool timeout on this block. Alternative approach needed urgently.,1,blocker
+Updated the testplan. Review comments addressed. Ready for re-review.,0,normal
+Waiting for software team to provide firmware. Blocking integration test.,1,blocker
+Coverage closure plan agreed with DV lead. Three days to target.,0,normal
+Testbench updated to cover new corner cases from architecture review.,0,normal
+Waiting for PD feedback on floorplan. Two meetings cancelled this week.,1,blocker
+RTL review comments addressed. Ready for re-merge.,0,normal
+DRC count down from 200 to 45 this week. Good progress.,0,normal
+Blocked. Vendor has not responded to support ticket for over one week.,1,blocker
+Waiver documented with justification. Approved by design lead.,0,normal
+Waiting for architecture sign-off on ECO. Blocking all downstream work.,1,blocker
+Stuck. Waiting for confirmation that previous ECO was properly validated.,1,blocker
+Testbench enhancement complete. New corner cases covered.,0,normal
+Bug fix merged and verified. Closing this ticket.,0,normal
+CDC analysis complete. Clean report. Sign-off done.,0,normal
+RTL re-spin required due to spec change. All downstream teams affected.,1,blocker
+Blocked on RTL freeze from the design team. No update since last week.,1,blocker
+Coverage closure meeting done. Final gaps assigned with owners and dates.,0,normal
+PD reports no congestion issues. Placement and routing on track.,0,normal
+Cannot close this without input from the architecture team. No response.,1,blocker
+Meeting scheduled with PD and DV teams to resolve the dependency.,0,normal
+Waiver approved for this DRC. Documented and closed.,0,normal
+Integration test passing. Moving to chip-level validation.,0,normal
+DV sign-off complete for this IP block.,0,normal
+Synthesis QoR improved after RTL optimisation. Timing margin increased.,0,normal
+RTL owner left the project. No handover done. Coverage gap unaddressed.,1,blocker
+Power analysis complete. Within budget. Signed off.,0,normal
+This dependency was supposed to be resolved last sprint. Still open.,1,blocker
+Coverage gap in error handling paths. Nobody has picked this up.,1,blocker
+Security review complete. No vulnerabilities found. Sign-off done.,0,normal
+All regression failures triaged. Three are known waivers. Two under fix.,0,normal
+Coverage report reviewed with DV lead. Gaps identified and assigned.,0,normal
+Physical design team reports congestion issue. Requires RTL changes.,1,blocker
+Program review complete. No new risks identified. On track.,0,normal
+STA closure on critical path achieved. Working on non-critical paths.,0,normal
+DFT coverage below threshold. Need additional patterns from DFT team.,1,blocker
+DRC violations in hard macro area. Foundry rule not clearly documented.,1,blocker
+Bug root cause identified. Fix in progress. ETA two days.,0,normal
+IP validation blocked. Owner on leave and no backup assigned.,1,blocker
+Spec clarification received from architecture. Updating testplan now.,0,normal
+PD floorplan approved. Physical design proceeding to placement.,0,normal
+DFT coverage above 95 percent threshold. Ready for sign-off.,0,normal
+Coverage gap in this path has been addressed. Tests added.,0,normal
+Architecture review done. Spec updated. Teams notified.,0,normal
+Analog models delivered. Power simulation restarted.,0,normal
+Waiting for PD to complete power grid analysis before we can proceed.,1,blocker
+Corner case added to testplan. Will be covered in next regression run.,0,normal
+RTL owner confirmed. Handover complete. DV continuing.,0,normal
+Memory controller integration blocked. Interface spec still not frozen.,1,blocker
+CAD tools updated. All flows revalidated. No issues.,0,normal
+DV resource pulled to another project. Coverage closure now at risk.,1,blocker
+Waiting on CDC sign-off from design team. No eta given.,1,blocker
+IP delivered from vendor. Integration started.,0,normal
+Coverage closure progressing well. On track for end of week target.,0,normal
+New RTL drop integrated. Testbench updated. Regression rerun started.,0,normal
+Regression pass rate dropped from 98 to 87 percent. Root cause unknown.,1,blocker
+Two weeks to tape-out and DRC count is still above 500. Critical.,1,blocker
+DV resource allocated. Coverage plan back on schedule.,0,normal
+STA sign-off complete on all corners. Timing closure achieved.,0,normal
+Waiting for sign-off from legal on IP licensing. Blocking tape-out.,1,blocker
+Firmware delivered by SW team. Chip-level testing resumed.,0,normal
+RTL freeze confirmed for this block. DV can proceed.,0,normal
+No owner assigned to this bug. Sitting unresolved for 3 weeks.,1,blocker
+Timing closure achieved on the critical path. Minor paths still in progress.,0,normal
+STA not converging. Timing team says they need another two weeks minimum.,1,blocker
+CDC violations from last check all resolved. Rerunning analysis.,0,normal
+No one picked up this action from the last program review. Escalate.,1,blocker
+All DV resources moved to bug fixing. Coverage plan now completely off track.,1,blocker
+Physical verification clean on this block. Moving to chip level.,0,normal
+ECO validated. LEC clean. Closing.,0,normal
+Architecture sign-off received on ECO. Implementation proceeding.,0,normal
+LVS sign-off complete on all blocks. Physical verification done.,0,normal
+Signoff checklist 80 percent complete. Remaining items tracked.,0,normal
+Coverage closure achieved on reset domain. Sign-off done.,0,normal
+Analog delivery confirmed for next week. Schedule updated.,0,normal
+This issue was raised in last three standups with no action taken.,1,blocker
+Program at risk. This single dependency is on the critical path to tape-out.,1,blocker
+Lint clean achieved. Moving to CDC analysis.,0,normal
+IP block validated. No functional issues found. Closing.,0,normal
+DFT sign-off received. This block ready for tape-out.,0,normal
+Updated status: on track for tape-out readiness review next week.,0,normal
+Timing constraints updated. STA rerun. Looks clean.,0,normal
+Waiting on waiver approval for 2 weeks. Blocking tape-out checklist.,1,blocker
+This is the third time this issue has been raised. Needs permanent fix.,1,blocker
+Stuck waiting for emulator bring-up. Falling further behind each day.,1,blocker
+Power budget exceeded. PD team and RTL team pointing at each other.,1,blocker
+Corner case scenario still uncovered after three attempts. Need help.,1,blocker
+Cannot close coverage on this block until bug fix is merged and re-run.,1,blocker
+Waiting for updated constraints from timing team. STA cannot proceed.,1,blocker
+Dependency between two external teams not being managed. Risk to program.,1,blocker
+Escalation required. This has missed three consecutive weekly milestones.,1,blocker
+Blocked on tool qualification. CAD team says it will take another week.,1,blocker
+Coverage plan reviewed and approved by DV lead.,0,normal
+ECO implemented and verified. Gate count within budget.,0,normal
+Emulation platform brought up successfully. Chip-level tests starting.,0,normal
+IP integration blocked. Waiting for third party to deliver updated GDS.,1,blocker
+PD sign-off on power grid. IR drop analysis passed.,0,normal
+Tool issue resolved by CAD team. Runs proceeding normally.,0,normal
+Cannot validate chip-level power without completed UPF. Still pending.,1,blocker
+Two critical bugs open in this block with no assignee. Needs attention now.,1,blocker
+DRC count reducing steadily. On track for clean tape-out.,0,normal
+Regression suite broken for 5 days. CI team has not fixed it yet.,1,blocker
+"Three teams involved, nobody taking ownership. Needs escalation.",1,blocker
+Escalate. No one has responded to this Jira ticket in two weeks.,1,blocker
+Escalate to director level. This is now a program schedule risk.,1,blocker
+Coverage target met on this block. Sign-off requested.,0,normal
+Formal verification tool keeps crashing. No support response from vendor.,1,blocker
+Chip-level test blocked by firmware bug. SW team says fix is two weeks out.,1,blocker
+No update from the DFT team on scan chain closure. Program at risk.,1,blocker
+Floorplan congestion resolved after cell placement optimisation.,0,normal
+LVS clean on this block. Moving to next.,0,normal
+No update from vendor on IP delivery. Program schedule at risk.,1,blocker
+Blocked on tool license availability. Cannot run signoff checks.,1,blocker
+Interface spec agreed between teams. Both confirmed. Unblocked.,0,normal
+Resource conflict between DV and PD teams. PM needs to adjudicate.,1,blocker
+Coverage dropped after last RTL drop. Team does not know why yet.,1,blocker
+Stuck on corner case coverage. Need architecture clarification urgently.,1,blocker
+This is a showstopper for tape-out. Needs immediate executive attention.,1,blocker
+Vendor support resolved tool issue. Runs completing now.,0,normal
+Coverage report shows 96 percent. Final 4 percent being addressed.,0,normal
+Bug found in gate-level sim. Requires RTL fix and full regression rerun.,1,blocker
+Corner case coverage added. Testplan updated and reviewed.,0,normal
+No one is driving resolution on this. Needs immediate PM attention.,1,blocker
+Regression pass rate back to 99 percent after bug fix.,0,normal
+Cannot close this without a waiver. Waiver process not started yet.,1,blocker
+Final RTL freeze confirmed. All downstream teams notified.,0,normal
+Blocked by missing UPF from PD team. Power simulation cannot start.,1,blocker
+Waiting on DFT sign-off for over 2 weeks now. No response to emails.,1,blocker
+This bug was closed incorrectly. Reopening. Needs proper fix before tape-out.,1,blocker
+Architecture question resolved in design review. Testplan updated.,0,normal
+Formal verification complete on this block. Sign-off done.,0,normal
+Tape-out readiness review blocked pending DRC waiver from foundry.,1,blocker
+Regression passing at 97 percent. Investigating the remaining 3 percent.,0,normal
+All DRC waivers documented and approved. GDS ready for submission.,0,normal
+LEC clean after ECO. Timing unaffected. Closing.,0,normal
+Blocked on foundry PDK update. Design team cannot proceed without it.,1,blocker
+PD sign-off received. This block is tape-out ready.,0,normal
+Program schedule reviewed. All teams on track for tape-out date.,0,normal
+Regression suite updated with new tests. Pass rate maintained.,0,normal
+IP integration complete. Running validation tests now.,0,normal
+Regression infrastructure down for 3 days. Blocking all DV progress.,1,blocker
+This has been in backlog for 6 weeks. Why has it not been picked up?,1,blocker
+No progress on lint clean-up. RTL team says not their priority right now.,1,blocker
+RTL changes keep coming in after freeze. Cannot stabilize testbench.,1,blocker
+Timing closure blocked by unresolved hold violations from PD team.,1,blocker
+Coverage at 89 percent. Targeting 95 by end of sprint.,0,normal
+Power grid analysis complete. No IR drop violations found.,0,normal
+Cross-team dependency on memory controller team. They are underwater.,1,blocker
+Gate-level simulation passing. No new failures since last drop.,0,normal
+Chip-level test infrastructure ready. Starting validation tomorrow.,0,normal
+Timing team confirms closure on all corners. Sign-off complete.,0,normal
+Cannot run gate-level simulation without netlist. Synthesis not started.,1,blocker
+Chip-level simulation passing on primary test vectors.,0,normal
+Cannot tape-out without LVS clean. Currently 47 open LVS errors.,1,blocker
+Stuck waiting for updated timing libraries from PD. STA cannot close.,1,blocker
+Escalate. Spec ambiguity causing rework across three teams simultaneously.,1,blocker
+Tape-out checklist item overdue. Owner not responding to follow-ups.,1,blocker
+Tape-out readiness review scheduled for end of week.,0,normal
+Stuck waiting for analog team to deliver SPICE models. Deadline at risk.,1,blocker
+Escalate now. This blocker will delay tape-out by at least one week.,1,blocker
+All tape-out checklist items complete. Ready for GDS submission.,0,normal
