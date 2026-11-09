@@ -1,92 +1,52 @@
-# ChipSentinel 🛡️
-### AI-driven Program Health & Early Warning for Chip Design Programs
+# ChipSentinel
 
-**Researcher:** Bhakti Sharma | M25AI2173 | M.Tech AI | IIT Jodhpur  
-**Supervisor:** Dr. Binod Kumar | IIT Jodhpur  
-**Project Start:** May 15, 2026 | **Phase 1 Target:** June 15, 2026
+AI-driven program health and early-warning prototype for chip design programs.
 
----
+**Author:** Bhakti Sharma (M25AI2173), M.Tech. Artificial Intelligence, IIT Jodhpur
+**Supervisor:** Dr. Binod Kumar
+**Status:** MTP 1 and MTP 2 complete (final report submitted November 2026)
 
-## The Problem
+## What it is
 
-Chip design programs span 11 phases from architecture to tape-out, involving 8–12 parallel teams. By the time a risk shows red on a dashboard, the schedule has already slipped. A single tape-out respin costs $1M–$30M.
+ChipSentinel combines three signals into one programme-health view:
 
-ChipSentinel reads across three AI-powered signals and tells senior leadership — in plain English — what is actually at risk before it becomes a crisis.
-
----
-
-## Workflow Coverage
-
-| Design Phase | Coverage | Signal |
+| Pillar | What it does | Method |
 |---|---|---|
-| Architecture & Spec | ❌ Gap | Phase 2 scope |
-| RTL Design | ⚠️ Partial | RTL churn rate after freeze → Pillar 1 feature |
-| Functional Verification | ✅ Covered | Pillar 1 + Pillar 2 — core of ChipSentinel |
-| Logic Synthesis | ❌ Gap | Phase 2 scope |
-| DFT Insertion | ⚠️ Partial | Explicit high-risk node in Pillar 3 |
-| Physical Design | ⚠️ Partial | Team node in Pillar 3 + DRC count input |
-| Timing Closure | ❌ Gap | Phase 2 scope |
-| DRC / LVS Signoff | ⚠️ Partial | DRC rate feeds Pillar 3 readiness score |
-| Tape-out & Foundry | ⚠️ Partial | Tape-out readiness score |
-| Post-Silicon | ➖ Out of scope | Pre-silicon tool only |
+| P1: Validation-gap risk scorer | Flags issues likely to become post-freeze defects | Random forest on OpenTitan issue metadata |
+| P2: Buried-blocker detector | Flags stalled dependencies in comment text | TF-IDF + random forest (trained on synthetic text) |
+| P3: Dependency graph | Models cross-team dependencies and computes a tape-out readiness score | NetworkX graph + weighted score |
 
----
+## Main findings (MTP 2)
 
-## Three Pillars
+- Label: a defect reported after an assumed functional freeze (median issue date, 2025-08-22), evaluated on a temporal split (250 issues before, 250 after).
+- Pillar 1 under this split: defect F1 = 0.25. The earlier F1 of 0.915 (MTP 1) came from a heuristic label that overlapped with the model inputs.
+- Ablation (average precision, chance = 0.17): P1 0.285, P2 0.134, P3 0.221, P1+P2 0.213, P1+P3 0.288, P2+P3 0.146, joint 0.222. The joint model did not beat Pillar 1 alone, and the confidence intervals overlap.
+- Simulation proof of concept: an 8-bit ALU with 14 injected bugs, run with iverilog and cocotb. Bugs in poorly covered regions tended to surface late or escape. This is a toy experiment, not evidence about real chips.
 
-| Pillar | What it does | Key signals |
-|---|---|---|
-| **P1 — Validation Gap Risk Scorer** | Flags which coverage gaps are likely to cause a tape-out escape | Bug density, block criticality, RTL churn after freeze, DRC violation rate |
-| **P2 — Buried Blocker Detection** | Surfaces Jira threads where dependencies are going nowhere | NLP on ticket text, escalation failure patterns, ownership gaps |
-| **P3 — Dependency Graph & Readiness Score** | Models inter-team dependencies, flags critical path slip | DFT as high-risk node, dependency health, DRC closure rate |
+## Repository contents
 
-All three feed a **single LLM-generated 60-second plain-English brief** for senior leadership.
+- `Chipsentinel - MTP Project.ipynb`: the full notebook (data extraction, the three pillars, temporal relabelling, joint table, ablation, simulation experiment, dashboard).
+- `dashboard/app.py`: Streamlit dashboard.
+- `data/`: OpenTitan issue snapshot (June 2026) and synthetic communication data.
+- `pillar1/`, `pillar2/`, `pillar3/`: trained models and result figures.
+- `sim_results.csv`: output of the iverilog + cocotb experiment.
 
----
+## How to run
 
-## DFT — Explicitly Modelled as High-Risk Node
+1. Open the notebook in Google Colab.
+2. Create your own free GitHub token (Settings, Developer settings, Personal access tokens, scope `public_repo`) and enter it when the notebook asks. Do not share or commit your token.
+3. Run the cells in order. Experiments load the saved June 2026 snapshot from this repository, so results match the report.
+4. To view the dashboard, run the Streamlit cell. For a public link from Colab, use the ngrok cell with your own free ngrok token.
+5. The simulation cell installs Icarus Verilog and cocotb itself and takes about a minute.
 
-DFT is the most commonly delayed team in chip programs. Pillar 3 flags three specific early warnings:
-- RTL freeze delayed → DFT start at risk
-- DFT sign-off not started at 80% DV coverage → critical path alert
-- DFT team blockers with no response for 5+ days → escalate
+## Limitations
 
----
+- The defect label is a proxy (bug label or failure keyword), and the freeze date is assumed.
+- Only 43 positive test cases, so confidence intervals are wide.
+- Pillar 2 is trained on synthetic text and did not transfer to real comments.
+- The Pillar 3 scenario is hand-specified and illustrative.
+- No practitioner interview responses were received.
 
-## Data Sources
+## Data and tools
 
-- **OpenTitan** — Google's open-source SoC. Real coverage reports, bug logs, PR history, RTL commit history (2021–present)
-- **DARPA OpenROAD** — DRC violation counts and synthesis QoR data
-- **Synthetic dataset** — 500–1,000 labelled Jira tickets and standup notes from practitioner interviews
-
----
-
-## Phase 1 Progress (May 15 – June 15, 2026)
-
-- [x] Proposal submitted to Dr. Binod Kumar
-- [x] GitHub repository created and structured
-- [ ] OpenTitan data extracted and labelled
-- [ ] Pillar 1 baseline model running
-- [ ] Synthetic Jira dataset generated
-- [ ] Pillar 2 NLP classifier running
-- [ ] Pillar 3 dependency graph with DFT node
-- [ ] Streamlit dashboard — end-to-end demo
-- [ ] Phase 1 report submitted
-
-## Phase 2 (Post June 15)
-
-- [ ] Timing closure risk model
-- [ ] Architecture/spec freeze risk signal
-- [ ] Full GNN for Pillar 3
-- [ ] Joint model + ablation study
-- [ ] Conference paper — MLCAD / DAC AI track
-- [ ] Provisional patent filing
-## Folder Structure
-
-chipsentinel/
-├── data/               # OpenTitan + synthetic datasets
-├── pillar1/            # Validation gap risk scorer
-├── pillar2/            # Buried blocker NLP detector
-├── pillar3/            # Dependency graph + readiness score
-├── dashboard/          # Streamlit demo app
-└── report/             # Project report
+OpenTitan (lowRISC) issue data, scikit-learn, NetworkX, Streamlit, Plotly, Icarus Verilog, cocotb.
