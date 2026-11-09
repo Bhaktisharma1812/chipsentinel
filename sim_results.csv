@@ -1,0 +1,15 @@
+bug,description,region_bins,region_cov_pre,region_cov_post,status
+1,ADD wrong when a=255,6,0.0,0.167,found_post_freeze
+2,SUB zero flag wrong when a=b,6,0.167,0.5,found_post_freeze
+3,AND wrong when b=0,6,0.0,0.5,found_post_freeze
+4,OR wrong when a=b=255,1,0.0,0.0,escaped
+5,XOR wrong when a=b,6,0.333,0.5,found_pre_freeze
+6,SHL wrong when shift>=8,24,0.125,0.542,found_pre_freeze
+7,SHR wrong when b=0,6,0.167,0.333,found_pre_freeze
+8,ADD carry lost when b>=128,9,0.0,0.667,found_post_freeze
+9,SUB wrong when a=0,5,0.0,0.2,found_post_freeze
+10,ADD carry wrong when a=b=0,1,0.0,0.0,escaped
+11,AND wrong when both MSB set,4,0.0,0.25,found_post_freeze
+12,XOR wrong when both LSB set,25,0.2,0.52,found_pre_freeze
+13,SLT wrong when a=b,6,0.333,0.5,found_post_freeze
+14,SUB wrong when b=1,6,0.0,0.0,escaped
